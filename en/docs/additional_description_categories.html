@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow">
+	<!--<base href="https://corgras.github.io/">-->
+
+	<title>Documentation for the «Additional Category Description + Settings» Extension for Opencart and ocStore</title>
+	<meta name="description" content="An extension for Opencart and ocStore that allows you to add text, banners, or HTML code to the bottom of category pages. Learn how to configure and use this module to enhance your online store.">
+
+	<link rel="icon" href="/libs/images/logo/favicon.svg">
+	<link rel="stylesheet" href="/libs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/libs/css/fontawesome.min.css">
+	<link rel="stylesheet" href="/libs/css/prism.css">
+
+	<link rel="stylesheet" href="/libs/css/main.css">
+	<link rel="stylesheet" media="screen and (max-width: 991.98px)" href="/libs/css/mobile.css">
+	<link rel="stylesheet" media="screen and (min-width: 992px)" href="/libs/css/desktop.css">
+
+	<link rel="alternate" href="https://corgras.github.io/en/docs/additional_description_categories" hreflang="en">
+	<link rel="canonical" href="https://corgras.github.io/en/docs/additional_description_categories">
+	<link rel="alternate" href="https://corgras.github.io/docs/additional_description_categories" hreflang="uk">
+	<link rel="alternate" href="https://corgras.github.io/ru/docs/additional_description_categories" hreflang="ru">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-TileColor">
+	<meta name="theme-color">
+	<meta name="apple-mobile-web-app-status-bar-style">
+	<meta name="msapplication-navbutton-color">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": "Documentation «Additional Category Description + Settings»",
+			"datePublished": "2023-10-05",
+			"dateModified": "2023-10-05",
+			"url": "https://corgras-oc.github.io/en/docs/additional_description_categories",
+			"inLanguage": "en",
+			"author": {
+				"@type": "Person",
+				"url": "https://corgras.github.io/en/",
+				"name": "RoS"
+			},
+			"description": "An extension for Opencart and ocStore that allows you to add text, banners, or HTML code to the bottom of category pages. Learn how to configure and use this module to enhance your online store.",
+			"publisher": {
+				"@type": "Organization",
+				"name": "CORGRAS OpenCart"
+			},
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "https://corgras-oc.github.io/en/docs/additional_description_categories"
+			},
+			"image": {
+				"@type": "ImageObject",
+				"url": "https://corgras-oc.github.io/libs/images/logo/logo.svg"
+			},
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"item": {
+							"@id": "https://corgras-oc.github.io/en/",
+							"name": "Home"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"item": {
+							"@id": "https://corgras-oc.github.io/en/extensions",
+							"name": "Extension"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"item": {
+							"@id": "https://corgras-oc.github.io/en/docs/additional_description_categories",
+							"name": "Documentation «Additional Category Description + Settings»"
+						}
+					}
+				]
+			}
+		}
+	</script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWTDFYVZP7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-QWTDFYVZP7');
+	</script>
+</head>
+<body>
+<header class="header">
+	<a class="col-2 header__logo" href="/en/">
+		<span><img src="/libs/images/logo/logo_text.svg" alt="«CORGRAS OpenCart»"></span>
+	</a>
+	<nav class="col header__navigation">
+		<ul class="navigation__list">
+			<li>
+				<a href="/en/extensions" class="link" data-title="Extension">
+					<i class="fal fa-archive"></i><span>Extension</span>
+				</a>
+			</li>
+			<li>
+				<a href="/fixes" class="link" data-title="Fixes">
+					<i class="fal fa-archive"></i><span>Fixes</span>
+				</a>
+			</li>
+			<li>
+				<a href="/en/services" class="link" data-title="Services">
+					<i class="fal fa-clipboard-list"></i><span>Services</span>
+				</a>
+			</li>
+			<li>
+				<a href="/en/faq" class="link" data-title="FAQ">
+					<i class="fal fa-comment-alt-lines"></i><span>FAQ</span>
+				</a>
+			</li>
+			<li>
+				<a href="/warez" class="link" data-title="Warez">
+					<i class="fal fa-shield-check"></i><span>Warez</span>
+				</a>
+			</li>
+			<li>
+				<a href="/en/support" class="link" data-title="Support">
+					<i class="fal fa-life-ring"></i><span>Support</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="col-2 header__navigation-icon">
+		<div class="navigation-icon__lang dropdown-right">
+			<button type="button" class="lang-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				<svg width="256px" height="256px" viewBox="0 0 256 256" id="Flat" xmlns="https://www.w3.org/2000/svg">
+					<path d="M239.13184,212.42188l-56-112a8.0001,8.0001,0,0,0-14.31055,0L147.12378,143.817a88.01219,88.01219,0,0,1-47.15234-16.89991A103.63932,103.63932,0,0,0,127.67187,64h24.30469a8,8,0,0,0,0-16h-56V32a8,8,0,0,0-16,0V48h-56a8,8,0,0,0,0,16h87.63257a87.71326,87.71326,0,0,1-23.64038,52.34106A87.6285,87.6285,0,0,1,68.98682,85.332a7.99985,7.99985,0,1,0-15.083,5.33789A103.55961,103.55961,0,0,0,75.9856,126.93945,87.52745,87.52745,0,0,1,23.97656,144a8,8,0,0,0,0,16,103.48476,103.48476,0,0,0,64.01331-22.09045A104.14165,104.14165,0,0,0,139.43115,159.202l-26.60986,53.21985a8.00006,8.00006,0,0,0,14.31055,7.15625L140.9209,192h70.11133l13.78906,27.57813a8.00006,8.00006,0,0,0,14.31055-7.15625ZM148.9209,176l27.05566-54.11133L203.03223,176Z"/>
+				</svg>
+			</button>
+			<div class="dropdown-menu min-w-0" aria-labelledby="dropdownMenuLang">
+				<a class="dropdown-item link active" href="#" hreflang="en" data-title="English"><span>English</span></a>
+				<a class="dropdown-item link" href="/ru/docs/additional_description_categories" hreflang="ru" data-title="Русский"><span>Русский</span></a>
+				<a class="dropdown-item link" href="/docs/additional_description_categories" hreflang="uk" data-title="Українська"><span>Українська</span></a>
+			</div>
+		</div>
+		<button class="hamburger hamburger--spin-r nav-hamburger__btn" type="button">
+			<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+		</button>
+	</div>
+</header>
+<main>
+	<article class="documentation__heading">
+		<div class="container">
+			<div class="heading-content">
+				<h1><span>Documentation</span> Additional Category Description + Settings</h1>
+				<p class="subtitle">The modification allows you to add text, banners, or HTML code to the bottom of category pages, which differs from the standard description. It also provides control over the top and bottom descriptions, images, and scripts for categories, offering more customization options for displaying information.</p>
+			</div>
+			<div class="card documentation__card">
+				<div class="col__card"><i class="fal fa-code-branch"></i>Version: 3.2</div>
+				<div class="col__card"><i class="fab fa-opencart"></i>OpenCart: 2.x | 3.x</div>
+				<div class="col__card"><i class="fal fa-history"></i>Release: 12.10.2023</div>
+			</div>
+		</div>
+		<div class="page-nav">
+			<div class="page-prev">
+				<a href="/en/extensions"><i class="prev"></i>Return to the catalog</a>
+			</div>
+			<div class="page-next">
+				<a href="#listcontents">Skip to content<i class="next"></i></a>
+			</div> 
+		</div>
+	</article>
+	<article class="article__grey" id="listcontents">
+		<div class="container">
+			<div class="row g-5 documentation__nav">
+				<div class="col-6 col-md-4">
+					<a href="#warning">
+						<i class="fal fa-exclamation-triangle"></i>
+						<span>1. Information to users</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#installer">
+						<i class="fal fa-tools"></i>
+						<span>2. Extension installer</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#setting_extension">
+						<i class="fal fa-sliders-h"></i>
+						<span>3. Setting extension</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#settings">
+						<i class="fal fa-sliders-v"></i>
+						<span>4. Settings in categories</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#stylization">
+						<i class="fal fa-palette"></i>
+						<span>5. Stylization</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#changes">
+						<i class="fal fa-history"></i>
+						<span>6. List of changes</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="article__white" id="warning">
+		<div class="container content">
+			<h2><i class="fal fa-exclamation-triangle icon-h"></i>Information to users</h2>
+			<p class="text-center">Please carefully review this information before using our products. We have aimed to provide maximum compatibility and ease of use, but some aspects may require your attention and configuration. Feel free to reach out to us with any questions or if you need assistance.</p>
+			<div class="row g-5 callouts">
+				<div class="col">
+					<div class="card h-100 callout bd-callout-danger">
+						<div class="card-body">
+							<h4 class="card-title"><i class="fal fa-exclamation-triangle"></i>Important!</h4>
+							<p class="card-text">The modifier has been tested on the standard Opencart template but may require adaptation for other templates.</p>
+							<p class="card-text">During installation, additional fields are created in the database. We recommend creating a backup of your data before installation for data recovery if needed.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 callout bd-callout-primary">
+						<div class="card-body">
+							<h4 class="card-title"><i class="fal fa-info-square"></i>Modifier doesn't install?</h4>
+							<p class="card-text">Try first installing «Localcopy OCMOD», and then attempt to install our modifier again. This sequence may resolve potential conflicts and help you successfully implement our changes on your website.</p>
+							<div class="buttons">
+								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Download for OpenCart 2x</span><i class="far fa-arrow-to-bottom btn-icon-left"></i></a>
+								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Download for OpenCart 3x</span><i class="far fa-arrow-to-bottom btn-icon-left"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="article__grey" id="installer">
+		<div class="container content">
+			<h2><i class="fal fa-tools icon-h"></i>Extension Installation</h2>
+			<p class="chapter">The installation process of the modifier consists of two steps:</p>
+			<ul>
+				<li><strong class="strong">«AD_Category_x_OpenCart_x.ocmod.zip»</strong> - this archive contains the main functionality of the module and the modifier;</li>
+				<li><strong class="strong">«AD_Category_FrontEnd_Default_OpenCart_x.ocmod.zip»</strong> - this archive contains a modifier for connecting the template.</li>
+			</ul>
+			<p class="chapter">To install the modifier, follow these steps:</p>
+			<ul>
+				<li>Login to the Admin Panel and navigate to <strong class="strong">«Menu -> Extensions -> Extension Installer»</strong>;</li>
+				<li>Upload and install both archives;</li>
+				<li>After successful installation, you will receive a notification;</li>
+				<li>Go to <strong class="strong">«Menu -> Extensions -> Modifications»</strong> and click the «Refresh» button in the upper right corner;</li>
+			</ul>
+			<p>After completing these steps, go to <strong class="strong">«Menu -> System -> User Groups»</strong> and set access rights for the administrator (in the «Allow Access» and «Modify Permission» sections, select <strong class="strong">«extension/module/cs_ad_category»</strong>).</p>
+			<p>Once you have done these steps, go to <strong class="strong">«Menu -> Extensions -> Modules»</strong> and install the module <strong class="strong">«Additional Category Descriptions + Settings»</strong>.</p>
+		</div>
+	</article>
+	<article id="setting_extension">
+		<div class="container content">
+			<h2><i class="fal fa-sliders-h icon-h"></i>Extension Configuration</h2>
+			<p>To configure the extension, go to <strong class="strong">«Menu -> Extensions -> Modules -> Additional Category Descriptions + Settings»</strong></p>
+			<p class="chapter">Main configuration parameters:</p>
+			<ul>
+				<li><strong class="strong">Description Positions</strong> - allows you to swap the top and bottom descriptions;</li>
+				<li><strong class="strong">Status</strong> - activates this extension.</li>
+			</ul>
+			<p class="chapter">Additional settings for top and bottom descriptions:</p>
+			<ul>
+				<li><strong class="strong">Description Status</strong> - displays the description block on the website;</li>
+				<li><strong class="strong">Image Status</strong> - displays the category image next to the text;</li>
+				<li><strong class="strong">Image Position</strong> - determines which side of the text to place the image;</li>
+				<li><strong class="strong">Description on Pagination Pages</strong> - configures the display of text on the first page or all pages;</li>
+				<li><strong class="strong">«Read More» Button Status</strong> - allows enabling or disabling the script for all category descriptions;</li>
+				<li><strong class="strong">Visible Text Height</strong> - adjusts the amount of visible text, with the rest being hidden;</li>
+				<li><strong class="strong">Screen Resolution</strong> - configures screen resolutions where this script will work.</li>
+			</ul>
+			<p class="chapter">Database Status:</p>
+			<ul>
+				<li>Displays the status of fields in the database table;</li>
+				<li>Manages the installation or removal of fields from the database.</li>
+			</ul>
+		</div>
+	</article>
+	<article class="article__grey" id="settings">
+		<div class="container content">
+			<h2><i class="fal fa-sliders-v icon-h"></i>Category Settings</h2>
+			<p>To configure the extension for a specific product, go to <strong class="strong">«Menu -> Catalog -> Categories»</strong> and select the desired category. Additional parameters are located in the <strong class="strong">«Design»</strong> tab.</p>
+			<p class="chapter">Here you can configure the following parameters:</p>
+			<ul>
+				<li><strong class="strong">«Read More» Button Status</strong> - enable or disable the script for a specific category, or leave it as default, in which case the module's settings will apply;</li>
+				<li><strong class="strong">Visible Text Height</strong> - specify the amount of text that will be visible, with the rest hidden.</li>
+			</ul>
+			<p>These settings will help you configure the extension for specific product categories in your catalog.</p>
+		</div>
+	</article>
+	<article id="stylization">
+		<div class="container content">
+			<h2><i class="fal fa-palette icon-h"></i>Styling</h2>
+			<p>You can change the layout of description blocks by editing the files located at the following paths:</p>
+			<section class="mt-5">
+				<p>Top description block:</p>
+				<pre><code class="language-http show-language">/catalog/view/theme/default/template/custom_templates/addons/ad_category_top.(twig/tpl)</code></pre>
+			</section>
+			<section class="mt-5">	
+				<p>Bottom description block:</p>
+				<pre><code class="language-http show-language">/catalog/view/theme/default/template/custom_templates/addons/ad_category_bottom.(twig/tpl)</code></pre>
+			</section>
+			<section class="mt-5">	
+				<p>If the default design of the «Expand / Collapse» button does not match your website, you can modify the CSS styles in the file <strong class="strong">«cs_ad_category.min.css»</strong>, which is located at the following path:</p>
+				<pre><code class="language-http show-language">/catalog/view/javascript/cs_libs/css/cs_ad_category.min.css</code></pre>
+			</section>
+		</div>
+	</article>
+	<article class="article__grey" id="problems">
+		<div class="container content">
+			<h2><i class="fal fa-toolbox icon-h"></i>Problems and solutions</h2>
+			<p class="text-center">If you have any questions or problems, we have collected in this section answers to frequently asked questions and solutions to the most common and common problems.</p>
+			<div class="row justify-content-center buttons">
+				<div class="col-12 col-md-6">
+					<a href="/faq" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Familiarize</span><i class="far fa-long-arrow-right btn-icon-left"></i></a>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article id="changes">
+		<div class="container">
+			<h2><i class="fal fa-history icon-h"></i>List of changes</h2>
+			<ul class="list-unstyled timeline">
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title release">
+								<span class="version">v3.2</span><span class="date">12.10.2023</span>
+							</h5>
+							<p class="tag"><span>Latest release</span></p>
+						</div>
+						<div class="block_content">
+							<p><strong>Changed:</strong></p>
+							<ul>
+								<li>Code optimization;</li>
+								<li>Replacing the «ReadMore» script with pure JavaScript.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v3.1</span><span class="date">31.05.2023</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Changed:</strong></p>
+							<ul>
+								<li>Correction in code.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v3.0</span><span class="date">30.11.2022</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Added:</strong></p>
+							<ul>
+								<li>Image position control.</li>
+							</ul>
+							<p><strong>Changed:</strong></p>
+							<ul>
+								<li>Same settings for Opencart 2 and 3 versions;</li>
+								<li>Control at which screen resolutions the script will run for the top and bottom descriptions.</li>
+							</ul>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v2.0</span><span class="date">10.06.2021</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Added For Opencart 3:</strong></p>
+							<ul>
+								<li>Control on which screen resolutions the script will run;</li>
+								<li>Replace descriptions;</li>
+								<li>Control image display;</li>
+								<li>Manage top and bottom descriptions;</li>
+								<li>Title for bottom description.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v1.0</span><span class="date">12.12.2017</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Added:</strong></p>
+							<ul>
+								<li>Adding bottom description for Opencart 3 version;</li>
+								<li>Ability to hide part of the text.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v1.0</span><span class="date">26.02.2016</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Added:</strong></p>
+							<ul>
+								<li>Adding bottom description to Opencart 2;</li>
+								<li>Hide description on all pages except the first;</li>
+								<li>Script control for each description individually;</li>
+								<li>The ability to hide part of the text.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</article>
+	<aside class="aside__donate">
+		<div class="container">
+			<h2>If you would like to support the author</h2>
+			<p class="text-center">You can do this with help: PayPal or Credit Card</p>
+			<div class="row justify-content-center buttons">
+				<div class="col-12 col-md-6">
+					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Donate</span><i class="far fa-long-arrow-right btn-icon-left"></i></a>
+				</div>
+			</div>
+		</div>
+	</aside>
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col footer__copyrights"><span>© <script>document.write(new Date().getFullYear());</script> CORGRAS. All rights reserved</span></div>
+		</div>
+	</div>
+</footer>
+
+<a id="scrollTop" class="btn-scrollTop"><i class="fas fa-chevron-up"></i></a>
+
+<!-- SCRIPT -->
+<script src="/libs/js/bootstrap.bundle.min.js"></script>
+<script src="/libs/js/prism.js"></script>
+<script src="/libs/js/common.js"></script>
+<script>Prism.highlightAll();</script>
+<!-- END SCRIPT -->
+
+</body>
+</html>

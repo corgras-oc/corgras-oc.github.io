@@ -246,11 +246,11 @@
 							<ul>
 								<li>Відкрити файл <span class="strong">«logs/error.log»</span> на вашому сервері. Наприкінці цього файлу будуть усі останні критичні помилки;</li>
 								<li>Відкрити в адмінці <span class="strong">«Меню -> Інструменти -> Логи помилок»</span> - тут відображаються помилки, але не завжди;</li>
-								<li>Включить вывод ошибок php на экран - добавить следующий код в конец файла .htaccess:
-									<pre><code class="language-htaccess show-language">
-php_value display_errors 1
-php_value display_startup_errors 1
-php_value error_reporting E_ALL
+								<li><p>Включить вывод ошибок php на экран - добавить следующий код в конец файла .htaccess:</p>
+									<pre><code class="language-markdown show-language">
+										php_value display_errors 1
+										php_value display_startup_errors 1
+										php_value error_reporting E_ALL
 									</code></pre>
 								</li>
 							</ul>
@@ -451,9 +451,7 @@ php_value error_reporting E_ALL
 			<p class="text-center">Ви можете зробити це за допомогою: PayPal або Кредитною карткою</p>
 			<div class="row justify-content-center buttons">
 				<div class="col-12 col-md-6">
-					<div class="button">
-						<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Задонатити</span><i class="far fa-long-arrow-right btn-icon-left"></i></a>
-					</div>
+					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Задонатити</span><i class="far fa-long-arrow-right btn-icon-left"></i></a>
 				</div>
 			</div>
 		</div>
@@ -470,7 +468,6 @@ php_value error_reporting E_ALL
 <a id="scrollTop" class="btn-scrollTop"><i class="fas fa-chevron-up"></i></a>
 
 <!-- SCRIPT -->
-<script src="/libs/js/jquery.min.js"></script>
 <script src="/libs/js/bootstrap.bundle.min.js"></script>
 <script src="/libs/js/prism.js"></script>
 <script src="/libs/js/common.js"></script>

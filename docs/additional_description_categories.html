@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="uk" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow">
+	<!--<base href="https://corgras.github.io/">-->
+
+	<title>Документація розширення «Додатковий опис категоріям + налаштування» для Opencart та ocStore</title>
+	<meta name="description" content="Розширення для Opencart і ocStore, яке дозволяє додавати текст, банер або HTML-код у нижній частині сторінок категорій. Дізнайтеся, як налаштувати й використовувати цей модуль для покращення вашого інтернет-магазину.">
+
+	<link rel="icon" href="/libs/images/logo/favicon.svg">
+	<link rel="stylesheet" href="/libs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/libs/css/fontawesome.min.css">
+	<link rel="stylesheet" href="/libs/css/prism.css">
+
+	<link rel="stylesheet" href="/libs/css/main.css">
+	<link rel="stylesheet" media="screen and (max-width: 991.98px)" href="/libs/css/mobile.css">
+	<link rel="stylesheet" media="screen and (min-width: 992px)" href="/libs/css/desktop.css">
+
+	<link rel="alternate" href="https://corgras.github.io/en/docs/additional_description_categories" hreflang="en">
+	<link rel="alternate" href="https://corgras.github.io/docs/additional_description_categories" hreflang="uk">
+	<link rel="canonical" href="https://corgras.github.io/docs/additional_description_categories">
+	<link rel="alternate" href="https://corgras.github.io/ru/docs/additional_description_categories" hreflang="ru">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-TileColor">
+	<meta name="theme-color">
+	<meta name="apple-mobile-web-app-status-bar-style">
+	<meta name="msapplication-navbutton-color">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": "Документація розширення «Додатковий опис категоріям + налаштування»",
+			"datePublished": "2023-10-05",
+			"dateModified": "2023-10-05",
+			"url": "https://corgras-oc.github.io/docs/additional_description_categories",
+			"inLanguage": "uk",
+			"author": {
+				"@type": "Person",
+				"url": "https://corgras.github.io/",
+				"name": "RoS"
+			},
+			"description": "Розширення для Opencart і ocStore, яке дозволяє додавати текст, банер або HTML-код у нижній частині сторінок категорій. Дізнайтеся, як налаштувати й використовувати цей модуль для покращення вашого інтернет-магазину.",
+			"publisher": {
+				"@type": "Organization",
+				"name": "CORGRAS OpenCart"
+			},
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "https://corgras-oc.github.io/docs/additional_description_categories"
+			},
+			"image": {
+				"@type": "ImageObject",
+				"url": "https://corgras-oc.github.io/libs/images/logo/logo.svg"
+			},
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"item": {
+							"@id": "https://corgras-oc.github.io",
+							"name": "Головна"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"item": {
+							"@id": "https://corgras-oc.github.io/extensions",
+							"name": "Розширення"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"item": {
+							"@id": "https://corgras-oc.github.io/docs/additional_description_categories",
+							"name": "Документація «Додатковий опис категоріям + налаштування»"
+						}
+					}
+				]
+			}
+		}
+	</script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWTDFYVZP7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-QWTDFYVZP7');
+	</script>
+</head>
+<body>
+<header class="header">
+	<a class="col-2 header__logo" href="/">
+		<span><img src="/libs/images/logo/logo_text.svg" alt="«CORGRAS OpenCart»"></span>
+	</a>
+	<nav class="col header__navigation">
+		<ul class="navigation__list">
+			<li>
+				<a href="/extensions" class="link" data-title="Розширення">
+					<i class="fal fa-archive"></i><span>Розширення</span>
+				</a>
+			</li>
+			<li>
+				<a href="/fixes" class="link" data-title="Фікси">
+					<i class="fal fa-archive"></i><span>Фікси</span>
+				</a>
+			</li>
+			<li>
+				<a href="/services" class="link" data-title="Послуги">
+					<i class="fal fa-clipboard-list"></i><span>Послуги</span>
+				</a>
+			</li>
+			<li>
+				<a href="/faq" class="link" data-title="Питання-відповідь">
+					<i class="fal fa-comment-alt-lines"></i><span>Питання-відповідь</span>
+				</a>
+			</li>
+			<li>
+				<a href="/warez" class="link" data-title="Варез">
+					<i class="fal fa-shield-check"></i><span>Варез</span>
+				</a>
+			</li>
+			<li>
+				<a href="/support" class="link" data-title="Техпідтримка">
+					<i class="fal fa-life-ring"></i><span>Техпідтримка</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="col-2 header__navigation-icon">
+		<div class="navigation-icon__lang dropdown-right">
+			<button type="button" class="lang-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				<svg width="256px" height="256px" viewBox="0 0 256 256" id="Flat" xmlns="https://www.w3.org/2000/svg">
+					<path d="M239.13184,212.42188l-56-112a8.0001,8.0001,0,0,0-14.31055,0L147.12378,143.817a88.01219,88.01219,0,0,1-47.15234-16.89991A103.63932,103.63932,0,0,0,127.67187,64h24.30469a8,8,0,0,0,0-16h-56V32a8,8,0,0,0-16,0V48h-56a8,8,0,0,0,0,16h87.63257a87.71326,87.71326,0,0,1-23.64038,52.34106A87.6285,87.6285,0,0,1,68.98682,85.332a7.99985,7.99985,0,1,0-15.083,5.33789A103.55961,103.55961,0,0,0,75.9856,126.93945,87.52745,87.52745,0,0,1,23.97656,144a8,8,0,0,0,0,16,103.48476,103.48476,0,0,0,64.01331-22.09045A104.14165,104.14165,0,0,0,139.43115,159.202l-26.60986,53.21985a8.00006,8.00006,0,0,0,14.31055,7.15625L140.9209,192h70.11133l13.78906,27.57813a8.00006,8.00006,0,0,0,14.31055-7.15625ZM148.9209,176l27.05566-54.11133L203.03223,176Z"/>
+				</svg>
+			</button>
+			<div class="dropdown-menu min-w-0" aria-labelledby="dropdownMenuLang">
+				<a class="dropdown-item link" href="/en/docs/additional_description_categories" hreflang="en" data-title="English"><span>English</span></a>
+				<a class="dropdown-item link" href="/ru/docs/additional_description_categories" hreflang="ru" data-title="Русский"><span>Русский</span></a>
+				<a class="dropdown-item link active" href="#" hreflang="uk" data-title="Українська"><span>Українська</span></a>
+			</div>
+		</div>
+		<button class="hamburger hamburger--spin-r nav-hamburger__btn" type="button">
+			<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+		</button>
+	</div>
+</header>
+<main>
+	<article class="documentation__heading">
+		<div class="container">
+			<div class="heading-content">
+				<h1><span>Документація</span> Додатковий опис категоріям + налаштування</h1>
+				<p class="subtitle">Модифікатор дозволяє додавати текст, банери або HTML-код до нижньої частини сторінок категорій, що відрізняється від стандартного опису, а також керувати верхнім і нижнім описом, зображеннями та скриптами для категорій, забезпечуючи більше можливостей налаштування відображення інформації.</p>
+			</div>
+			<div class="card documentation__card">
+				<div class="col__card"><i class="fal fa-code-branch"></i>Версія: 3.2</div>
+				<div class="col__card"><i class="fab fa-opencart"></i>OpenCart: 2.x | 3.x</div>
+				<div class="col__card"><i class="fal fa-history"></i>Реліз: 12.10.2023</div>
+			</div>
+		</div>
+		<div class="page-nav">
+			<div class="page-prev">
+				<a href="/extensions"><i class="prev"></i>Повернутися до каталогу</a>
+			</div>
+			<div class="page-next">
+				<a href="#listcontents">Перейти до змісту<i class="next"></i></a>
+			</div> 
+		</div>
+	</article>
+	<article class="article__grey" id="listcontents">
+		<div class="container">
+			<div class="row g-5 documentation__nav">
+				<div class="col-6 col-md-4">
+					<a href="#warning">
+						<i class="fal fa-exclamation-triangle"></i>
+						<span>1. Інформація користувачам</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#installer">
+						<i class="fal fa-tools"></i>
+						<span>2. Встановлення розширення</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#setting_extension">
+						<i class="fal fa-sliders-h"></i>
+						<span>3. Налаштування розширення</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#settings">
+						<i class="fal fa-sliders-v"></i>
+						<span>4. Налаштування у категоріях</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#stylization">
+						<i class="fal fa-palette"></i>
+						<span>5. Стилізація</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#changes">
+						<i class="fal fa-history"></i>
+						<span>6. Список змін</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="article__white" id="warning">
+		<div class="container content">
+			<h2><i class="fal fa-exclamation-triangle icon-h"></i>Інформація користувачам</h2>
+			<p class="text-center">Будь ласка, уважно ознайомтесь з ним, перш ніж розпочати використання наших продуктів. Ми намагалися забезпечити максимальну сумісність та зручність використання, але деякі аспекти можуть вимагати вашої уваги та налаштувань. Не соромтеся звертатися до нас з будь-якими питаннями чи потребою в допомозі.</p>
+			<div class="row g-5 callouts">
+				<div class="col">
+					<div class="card h-100 callout bd-callout-danger">
+						<div class="card-body">
+							<h4 class="card-title"><i class="fal fa-exclamation-triangle"></i>Важливо!</h4>
+							<p class="card-text">Модифікатор пройшов тестування на стандартному шаблоні Opencart, але може потребувати адаптацій для інших шаблонів.</p>
+							<p class="card-text">При встановленні створюються додаткові поля в базі даних. Рекомендуємо зробити резервну копію даних перед встановленням для можливості відновлення даних в разі потреби.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 callout bd-callout-primary">
+						<div class="card-body">
+							<h4 class="card-title"><i class="fal fa-info-square"></i>Модифікатор не встановлюється?</h4>
+							<p class="card-text">Спробуйте спочатку встановити «Localcopy OCMOD», а потім спробуйте встановити наш модифікатор знову. Ця послідовність може вирішити можливі конфлікти та допоможе вам успішно впровадити наші зміни на вашому сайті.</p>
+							<div class="buttons">
+								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 2x</span><i class="far fa-arrow-to-bottom btn-icon-left"></i></a>
+								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="far fa-arrow-to-bottom btn-icon-left"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="article__grey" id="installer">
+		<div class="container content">
+			<h2><i class="fal fa-tools icon-h"></i>Встановлення розширення</h2>
+			<p class="chapter">Процес встановлення модифікатора складається з двох кроків:</p>
+			<ul>
+				<li><strong class="strong">«AD_Category_x_OpenCart_x.ocmod.zip»</strong> - цей архів містить основний функціонал модуля та модифікатора;</li>
+				<li><strong class="strong">«AD_Category_FrontEnd_Default_OpenCart_x.ocmod.zip»</strong> - цей архів містить модифікатор для підключення шаблону.</li>
+			</ul>
+			<p class="chapter">Щоб встановити модифікатор, виконайте наступні кроки:</p>
+			<ul>
+				<li>Увійдіть в Адмін-панель та перейдіть до розділу <strong class="strong">«Меню -> Розширення -> Встановлення розширень»</strong>;</li>
+				<li>Завантажте та встановіть обидва архіви;</li>
+				<li>Після успішного завершення встановлення отримаєте повідомлення про це;</li>
+				<li>Перейдіть до розділу <strong class="strong">«Меню -> Розширення -> Модифікатори»</strong> і у правому верхньому куті натисніть кнопку «Оновити»;</li>
+			</ul>
+			<p>Після цього перейдіть до <strong class="strong">«Меню -> Система -> Групи користувачів»</strong> і встановіть права доступу для адміністратора (в розділах «Дозволити перегляд» та «Дозволити редагувати» оберіть <strong class="strong">«extension/module/cs_ad_category»</strong>).<p>
+			<p>Завершивши ці кроки, перейдіть до розділу <strong class="strong">«Меню -> Розширення -> Модулі»</strong> і встановіть модуль <strong class="strong">«Додатковий Опис Категоріям + Налаштування»</strong>.</p>
+		</div>
+	</article>
+	<article id="setting_extension">
+		<div class="container content">
+			<h2><i class="fal fa-sliders-h icon-h"></i>Налаштування розширення</h2>
+			<p>Для налаштування розширення перейдіть <strong class="strong">«Меню -> Розширення -> Модулі -> Додаткове Опис Категоріям + Налаштування»</strong></p>
+			<p class="chapter">Основні параметри налаштування:</p>
+			<ul>
+				<li><strong class="strong">Позиції описів</strong> - дозволяє змінювати місцями верхній та нижній опис;</li>
+				<li><strong class="strong">Статус</strong> - відповідає за активацію цього розширення.</li>
+			</ul>
+			<p class="chapter">Додаткові параметри налаштування верхнього та нижнього опису:</p>
+			<ul>
+				<li><strong class="strong">Статус опису</strong> - відображення блоку з описом на сайті;</li>
+				<li><strong class="strong">Статус зображення</strong> - відображає зображення категорії поруч із текстом;</li>
+				<li><strong class="strong">Позиція зображення</strong> - визначає, з якого боку тексту розташовувати зображення;</li>
+				<li><strong class="strong">Опис на сторінках пагінації</strong> - налаштовує відображення тексту на першій сторінці чи на всіх;</li>
+				<li><strong class="strong">Статус кнопки «Детальніше»</strong> - дозволяє включити або вимкнути скрипт для всіх описів категорій;</li>
+				<li><strong class="strong">Висота видимого тексту</strong> - регулює кількість видимого тексту, а іншу частину приховує;</li>
+				<li><strong class="strong">Розширення екрану</strong> - налаштовує роздільні здатності екрану, на яких цей скрипт працюватиме.</li>
+			</ul>
+			<p class="chapter">Статус БД:</p>
+			<ul>
+				<li>Відображення статусу полів у таблиці БД;</li>
+				<li>Керування установкою або видаленням полів з БД.</li>
+			</ul>
+		</div>
+	</article>
+	<article class="article__grey" id="settings">
+		<div class="container content">
+			<h2><i class="fal fa-sliders-v icon-h"></i>Налаштування у категоріях</h2>
+			<p>Щоб налаштувати розширення для конкретного товару, перейдіть в розділ <strong class="strong">«Меню -> Каталог -> Категорії»</strong> і оберіть потрібну категорію. Додаткові параметри знаходяться у вкладці <strong class="strong">«Дизайн»</strong></p>
+			<p class="chapter">Тут ви можете налаштувати наступні параметри:</p>
+			<ul>
+				<li><strong class="strong">Статус кнопки «Детальніше»</strong> - увімкніть або вимкніть скрипт для конкретної категорії, або залиште за замовчуванням, тоді будуть застосовуватися налаштування з модуля;</li>
+				<li><strong class="strong">Висота видимого тексту</strong> - визначте кількість тексту, який буде видимим, інша частина тексту буде прихована.</li>
+			</ul>
+			<p>Ці налаштування допоможуть вам налаштувати розширення для конкретних категорій товарів у вашому каталозі.</p>
+		</div>
+	</article>
+	<article id="stylization">
+		<div class="container content">
+			<h2><i class="fal fa-palette icon-h"></i>Стилізація</h2>
+			<p>Ви можете змінювати верстку блоків з описом, редагуючи файли, які розташовані за такими шляхами:</p>
+			<section class="mt-5">
+				<p>Верхній блок опису:<p>
+				<pre><code class="language-http show-language">/catalog/view/theme/default/template/custom_templates/addons/ad_category_top.(twig/tpl)</code></pre>
+			</section>
+			<section class="mt-5">			
+				<p>Нижній блок опису:<p>
+				<pre><code class="language-http show-language">/catalog/view/theme/default/template/custom_templates/addons/ad_category_bottom.(twig/tpl)</code></pre>
+			<section class="mt-5">	
+				<p>Якщо стандартний дизайн кнопки «Розгорнути / Згорнути» не відповідає вашому сайту, ви можете змінити CSS стилі в файлі <strong class="strong">«cs_ad_category.min.css»</strong>, який розташований за таким шляхом:</p>
+				<pre><code class="language-http show-language">/catalog/view/javascript/cs_libs/css/cs_ad_category.min.css</code></pre>
+			</section>	
+		</div>
+	</article>
+	<article class="article__grey" id="problems">
+		<div class="container content">
+			<h2>Проблеми та рішення</h2>
+			<p class="text-center">Якщо виникли питання або проблеми, то ми зібрали в даному розділі відповіді на питання, що часто ставляться, вирішення найбільш загальних і часто зустрічаються проблем.</p>
+			<div class="row justify-content-center buttons">
+				<div class="col-12 col-md-6">
+					<a href="/faq" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Ознайомитись</span><i class="far fa-long-arrow-right btn-icon-left"></i></a>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article id="changes">
+		<div class="container">
+			<h2><i class="fal fa-history icon-h"></i>Список змін</h2>
+			<ul class="list-unstyled timeline">
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title release">
+								<span class="version">v3.2</span><span class="date">12.10.2023</span>
+							</h5>
+							<p class="tag"><span>Останній реліз</span></p>
+						</div>
+						<div class="block_content">
+							<p><strong>Змінено:</strong></p>
+							<ul>
+								<li>Оптимізація коду;</li>
+								<li>Заміна скрипту «ReadMore» на чистий JavaScript.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v3.1</span><span class="date">31.05.2023</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Змінено:</strong></p>
+							<ul>
+								<li>Корекція у коді.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v3.0</span><span class="date">30.11.2022</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Додано:</strong></p>
+							<ul>
+								<li>Керування позицією зображення.</li>
+							</ul>
+							<p><strong>Змінено:</strong></p>
+							<ul>
+								<li>Одноманітні налаштування для версій Opencart 2 та 3;</li>
+								<li>Керування на яких дозволи екранів буде працювати скрипт для верхнього та нижнього опису.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v2.0</span><span class="date">10.06.2021</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Додано Для Opencart 3:</strong></p>
+							<ul>
+								<li>Керувати на які дозволи екранів буде працювати скрипт;</li>
+								<li>Міняти опис місцями;</li>
+								<li>Керувати відображенням зображення;</li>
+								<li>Керувати верхнім та нижнім описом;</li>
+								<li>Заголовок для опису.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v1.0</span><span class="date">12.12.2017</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Додано:</strong></p>
+							<ul>
+								<li>Додавання нижнього опису для версії Opencart 3;</li>
+								<li>Можливість приховувати частину тексту.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v1.0</span><span class="date">26.02.2016</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Додано:</strong></p>
+							<ul>
+								<li>Додавання нижнього опису Opencart 2;</li>
+								<li>Приховувати опис на всіх сторінках, крім першої;</li>
+								<li>Керування скриптом для кожного опису індивідуально;</li>
+								<li>Можливість приховувати частину тексту.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</article>
+	<aside class="aside__donate">
+		<div class="container">
+			<h2>Якщо хочете підтримати автора</h2>
+			<p class="text-center">Ви можете зробити це за допомогою: PayPal або Кредитною карткою</p>
+			<div class="row justify-content-center buttons">
+				<div class="col-12 col-md-6">
+					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Задонатити</span><i class="far fa-long-arrow-right btn-icon-left"></i></a>
+				</div>
+			</div>
+		</div>
+	</aside>
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col footer__copyrights"><span>© <script>document.write(new Date().getFullYear());</script> CORGRAS OpenCart. Всі права захищені</span></div>
+		</div>
+	</div>
+</footer>
+
+<a id="scrollTop" class="btn-scrollTop"><i class="fas fa-chevron-up"></i></a>
+
+<!-- SCRIPT -->
+<script src="/libs/js/bootstrap.bundle.min.js"></script>
+<script src="/libs/js/prism.js"></script>
+<script src="/libs/js/common.js"></script>
+<script>Prism.highlightAll();</script>
+<!-- END SCRIPT -->
+
+</body>
+</html>
