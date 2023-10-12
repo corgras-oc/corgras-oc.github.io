@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'ics';
+  src:  url('/libs/fonts/ics.eot?mhqx3d');
+  src:  url('/libs/fonts/ics.eot?mhqx3d#iefix') format('embedded-opentype'),
+    url('/libs/fonts/ics.ttf?mhqx3d') format('truetype'),
+    url('/libs/fonts/ics.woff?mhqx3d') format('woff'),
+    url('/libs/fonts/ics.svg?mhqx3d#ics') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ics-"], [class*=" ics-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ics' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+	display: inline-block;
+  text-rendering: auto; 
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ics-demo:before {
+  content: "\e923";
+}
+.ics-d-arrow-down-line:before {
+  content: "\e918";
+}
+.ics-arrow-down-line:before {
+  content: "\e904";
+}
+.ics-d-check:before {
+  content: "\e903";
+}
+.ics-check:before {
+  content: "\e910";
+}
+.ics-d-arrow-down:before {
+  content: "\e907";
+}
+.ics-chevron-down:before {
+  content: "\e911";
+}
+.ics-d-arrow-left:before {
+  content: "\e908";
+}
+.ics-chevron-left:before {
+  content: "\e912";
+}
+.ics-d-arrow-right:before {
+  content: "\e90d";
+}
+.ics-chevron-right:before {
+  content: "\e913";
+}
+.ics-d-arrow-up:before {
+  content: "\e90e";
+}
+.ics-arrow-up:before {
+  content: "\e914";
+}
+.ics-d-close:before {
+  content: "\e90f";
+}
+.ics-close:before {
+  content: "\e996";
+}
+.ics-arrow-left-long:before {
+  content: "\e905";
+}
+.ics-arrow-right-long:before {
+  content: "\e906";
+}
+.ics-angular:before {
+  content: "\e901";
+}
+.ics-bootstrap:before {
+  content: "\e90b";
+}
+.ics-css3:before {
+  content: "\e91e";
+}
+.ics-css3-alt:before {
+  content: "\e91f";
+}
+.ics-drupal:before {
+  content: "\e924";
+}
+.ics-google-drive:before {
+  content: "\e93d";
+}
+.ics-github:before {
+  content: "\e939";
+}
+.ics-git:before {
+  content: "\e937";
+}
+.ics-joomla:before {
+  content: "\e948";
+}
+.ics-magento:before {
+  content: "\e951";
+}
+.ics-modx:before {
+  content: "\e956";
+}
+.ics-html5:before {
+  content: "\e942";
+}
+.ics-js:before {
+  content: "\e976";
+}
+.ics-node-js:before {
+  content: "\e958";
+}
+.ics-less:before {
+  content: "\e94d";
+}
+.ics-uikit:before {
+  content: "\e98a";
+}
+.ics-node:before {
+  content: "\e957";
+}
+.ics-sass:before {
+  content: "\e969";
+}
+.ics-npm:before {
+  content: "\e959";
+}
+.ics-typo3:before {
+  content: "\e988";
+}
+.ics-python:before {
+  content: "\e963";
+}
+.ics-youtube:before {
+  content: "\e99b";
+}
+.ics-wordpress:before {
+  content: "\e995";
+}
+.ics-vue:before {
+  content: "\e98f";
+}
+.ics-pro:before {
+  content: "\e981";
+}
+.ics-firefox:before {
+  content: "\e931";
+}
+.ics-edge:before {
+  content: "\e925";
+}
+.ics-edge2:before {
+  content: "\e926";
+}
+.ics-ie:before {
+  content: "\e946";
+}
+.ics-opera:before {
+  content: "\e95c";
+}
+.ics-paypal:before {
+  content: "\e961";
+}
+.ics-telegram:before {
+  content: "\e980";
+}
+.ics-dev:before {
+  content: "\e920";
+}
+.ics-opencart:before {
+  content: "\e95b";
+}
+.ics-php:before {
+  content: "\e962";
+}
+.ics-font-awesome:before {
+  content: "\e936";
+}
+.ics-codepen:before {
+  content: "\e91b";
+}
+.ics-figma:before {
+  content: "\e92e";
+}
+.ics-house:before {
+  content: "\e941";
+}
+.ics-book:before {
+  content: "\e909";
+}
+.ics-books:before {
+  content: "\e90a";
+}
+.ics-archive:before {
+  content: "\e90c";
+}
+.ics-list:before {
+  content: "\e915";
+}
+.ics-list-check:before {
+  content: "\e900";
+}
+.ics-clock:before {
+  content: "\e916";
+}
+.ics-history:before {
+  content: "\e917";
+}
+.ics-code-branch:before {
+  content: "\e91a";
+}
+.ics-code2:before {
+  content: "\e91c";
+}
+.ics-code:before {
+  content: "\e919";
+}
+.ics-download:before {
+  content: "\e922";
+}
+.ics-cogs:before {
+  content: "\e91d";
+}
+.ics-tool:before {
+  content: "\e96a";
+}
+.ics-shield-check:before {
+  content: "\e902";
+}
+.ics-shield-virus:before {
+  content: "\e96b";
+}
+.ics-laptop-code:before {
+  content: "\e94c";
+}
+.ics-display-code:before {
+  content: "\e921";
+}
+.ics-envelope:before {
+  content: "\e927";
+}
+.ics-envelope-open:before {
+  content: "\e928";
+}
+.ics-envelope-text:before {
+  content: "\e929";
+}
+.ics-file-code:before {
+  content: "\e92f";
+}
+.ics-file-lines:before {
+  content: "\e930";
+}
+.ics-folder:before {
+  content: "\e934";
+}
+.ics-folder-open:before {
+  content: "\e935";
+}
+.ics-lang:before {
+  content: "\e93b";
+}
+.ics-lang2:before {
+  content: "\e94b";
+}
+.ics-d-image:before {
+  content: "\e944";
+}
+.ics-image:before {
+  content: "\e943";
+}
+.ics-question:before {
+  content: "\e953";
+}
+.ics-d-paint:before {
+  content: "\e95d";
+}
+.ics-paint:before {
+  content: "\e95e";
+}
+.ics-palette:before {
+  content: "\e95f";
+}
+.ics-receipt:before {
+  content: "\e966";
+}
+.ics-sliders-h:before {
+  content: "\e96c";
+}
+.ics-sliders-v:before {
+  content: "\e96d";
+}
+.ics-info:before {
+  content: "\e974";
+}
+.ics-triangle:before {
+  content: "\e985";
+}
+.ics-toolbox:before {
+  content: "\e984";
+}

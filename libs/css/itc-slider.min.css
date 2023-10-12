@@ -1,0 +1,13 @@
+/*!
+* chiefSlider
+*	site: https://itchief.ru/javascript/slider
+*	github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2021 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
+.itc-slider{position:relative}.itc-slider__wrapper{overflow:hidden;width: calc(100% - 80px);margin: auto;}.itc-slider__items{display:flex;transition:transform .5s;will-change:transform}.itc-slider__transition-none{transition:none}.itc-slider__item{flex:0 0 100%;max-width:100%;user-select:none;will-change:transform;display:flex;justify-content:center;align-items:center;color:rgba(255,255,255, 0.8);font-size:7rem;}.itc-slider__btn{position:absolute;top:50%;display:flex;justify-content:center;align-items:center;width:40px;height:50px;color:#141414;text-align:center;background:none;border:none;transform:translateY(-50%);cursor:pointer}.itc-slider__btn_hide{display:none}.itc-slider__btn_prev{left:0}.itc-slider__btn_next{right:0}.itc-slider__btn:focus,.itc-slider__btn:hover{color:#1A73E9;text-decoration:none;background:none;outline:0}.itc-slider__btn::before{content:"";display:inline-block;width:20px;height:35px;line-height:35px;background:center center/100% 100% no-repeat}.itc-slider__btn_prev::before{content:'\f053';font-family:"Font Awesome 5 Pro";font-size:35px;}.itc-slider__btn_next::before{content:'\f054';font-family:"Font Awesome 5 Pro";font-size:35px;}.itc-slider__indicators{position:absolute;right:0;bottom:0;left:0;z-index:15;display:flex;justify-content:center;margin:0 15%;padding-left:0;list-style:none}.itc-slider__indicator{flex:0 1 auto;box-sizing:content-box;width:30px;height:5px;margin-right:3px;margin-left:3px;text-indent:-999px;background-color:#141414;background-clip:padding-box;border-top:15px solid transparent;border-bottom:15px solid transparent;cursor:pointer}.itc-slider__indicator_active{background-color:#1A73E9}
+.itc-slider__wrapper{overflow:hidden;}
+@media (max-width: 767px){.itc-slider__item{flex:0 0 100%;max-width:100%;}}
+@media (min-width: 768px){.itc-slider__item{flex: 0 0 50%;max-width:50%;}}
+@media (min-width: 1200px){.itc-slider__item{flex:0 0 33.3333333333%;max-width:33.3333333333%;}}
