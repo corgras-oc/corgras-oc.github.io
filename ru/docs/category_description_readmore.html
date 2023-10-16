@@ -5,8 +5,8 @@
 	<meta name="robots" content="index, follow">
 	<!--<base href="https://corgras.github.io/">-->
 
-	<title>Документация по расширению «Дополнительное описание категорий + настройки» для Opencart и ocStore</title>
-	<meta name="description" content="Расширение для Opencart и ocStore, которое позволяет добавлять текст, баннеры или HTML-код в нижней части страниц категорий. Узнайте, как настроить и использовать этот модуль для улучшения вашего интернет-магазина.">
+	<title>Документация по расширению «JS Readmore для описания категории» для Opencart и ocStore</title>
+	<meta name="description" content="Позволяет скрывать часть длинного текста на странице категории и предоставляет пользователям возможность разворачивать и скрывать описание категории по мере необходимости. Этот модификатор обеспечивает более гибкий и удобный способ представления информации на страницах категорий вашего интернет-магазина на Opencart / ocStore">
 
 	<link rel="icon" href="/libs/images/logo/favicon.svg">
 	<link rel="stylesheet" href="/libs/css/bootstrap.min.css">
@@ -17,10 +17,10 @@
 	<link rel="stylesheet" media="screen and (max-width: 991.98px)" href="/libs/css/mobile.css">
 	<link rel="stylesheet" media="screen and (min-width: 992px)" href="/libs/css/desktop.css">
 
-	<link rel="alternate" href="https://corgras.github.io/en/docs/additional_description_categories" hreflang="en">
-	<link rel="alternate" href="https://corgras.github.io/docs/additional_description_categories" hreflang="uk">
-	<link rel="alternate" href="https://corgras.github.io/ru/docs/additional_description_categories" hreflang="ru">
-	<link rel="canonical" href="https://corgras.github.io/ru/docs/additional_description_categories">
+	<link rel="alternate" href="https://corgras.github.io/en/docs/category_description_readmore" hreflang="en">
+	<link rel="alternate" href="https://corgras.github.io/docs/category_description_readmore" hreflang="uk">
+	<link rel="alternate" href="https://corgras.github.io/ru/docs/category_description_readmore" hreflang="ru">
+	<link rel="canonical" href="https://corgras.github.io/ru/docs/category_description_readmore">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="msapplication-TileColor">
@@ -32,24 +32,24 @@
 		{
 			"@context": "https://schema.org",
 			"@type": "Article",
-			"headline": "Документация «Дополнительное описание категорий + настройки»",
-			"datePublished": "2016-02-26",
+			"headline": "Документация «JS Readmore для описания категории»",
+			"datePublished": "2023-05-03",
 			"dateModified": "2023-10-16",
-			"url": "https://corgras-oc.github.io/ru/docs/additional_description_categories",
+			"url": "https://corgras-oc.github.io/ru/docs/category_description_readmore",
 			"inLanguage": "ru",
 			"author": {
 				"@type": "Person",
 				"url": "https://corgras.github.io/ru/",
 				"name": "RoS"
 			},
-			"description": "Расширение для Opencart и ocStore, которое позволяет добавлять текст, баннеры или HTML-код в нижней части страниц категорий. Узнайте, как настроить и использовать этот модуль для улучшения вашего интернет-магазина.",
+			"description": "Позволяет скрывать часть длинного текста на странице категории и предоставляет пользователям возможность разворачивать и скрывать описание категории по мере необходимости. Этот модификатор обеспечивает более гибкий и удобный способ представления информации на страницах категорий вашего интернет-магазина на Opencart / ocStore",
 			"publisher": {
 				"@type": "Organization",
 				"name": "CORGRAS OpenCart"
 			},
 			"mainEntityOfPage": {
 				"@type": "WebPage",
-				"@id": "https://corgras-oc.github.io/ru/docs/additional_description_categories"
+				"@id": "https://corgras-oc.github.io/ru/docs/category_description_readmore"
 			},
 			"image": {
 				"@type": "ImageObject",
@@ -78,8 +78,8 @@
 						"@type": "ListItem",
 						"position": 3,
 						"item": {
-							"@id": "https://corgras-oc.github.io/ru/docs/additional_description_categories",
-							"name": "Документация «Дополнительное описание категорий + настройки»"
+							"@id": "https://corgras-oc.github.io/ru/docs/category_description_readmore",
+							"name": "Документация «JS Readmore для описания категории»"
 						}
 					}
 				]
@@ -142,9 +142,9 @@
 				<i class="ics-lang2"></i>
 			</button>
 			<div class="dropdown-menu min-w-0" aria-labelledby="dropdownMenuLang">
-				<a class="dropdown-item link" href="/en/docs/additional_description_categories" hreflang="en" data-title="English"><span>English</span></a>
+				<a class="dropdown-item link" href="/en/docs/category_description_readmore" hreflang="en" data-title="English"><span>English</span></a>
 				<a class="dropdown-item link active" href="#" hreflang="ru" data-title="Русский"><span>Русский</span></a>
-				<a class="dropdown-item link" href="/docs/additional_description_categories" hreflang="uk" data-title="Українська"><span>Українська</span></a>
+				<a class="dropdown-item link" href="/docs/category_description_readmore" hreflang="uk" data-title="Українська"><span>Українська</span></a>
 			</div>
 		</div>
 		<button class="hamburger hamburger--spin-r nav-hamburger__btn" type="button">
@@ -156,11 +156,11 @@
 	<article class="documentation__heading">
 		<div class="container">
 			<div class="heading-content">
-				<h1><span>Документация</span> Дополнительное описание категорий + настройки</h1>
-				<p class="subtitle">Модификация позволяет добавлять текст, баннеры или HTML-код в нижней части страниц категорий, что отличается от стандартного описания. Также она предоставляет управление верхним и нижним описанием, изображениями и скриптами для категорий, предлагая больше настроек для отображения информации.</p>
+				<h1><span>Документация</span> JS Readmore для описания категории</h1>
+				<p class="subtitle">Позволяет скрывать часть длинного текста на странице категории и предоставляет пользователям возможность разворачивать и скрывать описание категории по мере необходимости. Этот модификатор обеспечивает более гибкий и удобный способ представления информации на страницах категорий вашего интернет-магазина. Вам больше не нужно загружать страницы дополнительным контентом, ведь пользователи сами решают, когда им нужно увидеть полное описание категории.</p>
 			</div>
 			<div class="card documentation__card">
-				<div class="col__card"><i class="ics-code-branch"></i>Версия: 3.2</div>
+				<div class="col__card"><i class="ics-code-branch"></i>Версия: 1.2</div>
 				<div class="col__card"><i class="ics-opencart"></i>OpenCart: 2.x | 3.x</div>
 				<div class="col__card"><i class="ics-history"></i>Релиз: 16.10.2023</div>
 			</div>
@@ -170,7 +170,7 @@
 				<a href="/ru/extensions"><i class="prev"></i>Вернуться в каталог</a>
 			</div>
 			<div class="page-details">
-				<a href="/ru/product/additional_description_categories">
+				<a href="/ru/product/category_description_readmore">
 					<i class="prev"></i>Подробнее о модификаторе<i class="next"></i>
 				</a>
 			</div>
@@ -253,39 +253,25 @@
 	<article class="article__grey" id="installer">
 		<div class="container content">
 			<h2><i class="ics-tool icon-h"></i>Установка расширения</h2>
-			<p class="chapter">Процесс установки модификатора состоит из двух шагов:</p>
-			<ul>
-				<li><strong class="strong">«AD_Category_x_OpenCart_x.ocmod.zip»</strong> - это архив, содержащий основной функционал модуля и модификатора;</li>
-				<li><strong class="strong">«AD_Category_FrontEnd_Default_OpenCart_x.ocmod.zip»</strong> - это архив, содержащий модификатор для подключения шаблона.</li>
-			</ul>
 			<p class="chapter">Чтобы установить модификатор, выполните следующие шаги:</p>
 			<ul>
 				<li>Войдите в Админ-панель и перейдите в раздел <strong class="strong">«Меню -> Расширения -> Установка расширений»</strong>;</li>
-				<li>Загрузите и установите оба архива;</li>
-				<li>После успешной установки вы получите уведомление об этом;</li>
-				<li>Перейдите в раздел <strong class="strong">«Меню -> Расширения -> Модификаторы»</strong> и в правом верхнем углу нажмите кнопку «Обновить»;</li>
+				<li>Загрузите и установите архивный файл <strong class="strong">«CD_Readmore_x_OpenCart_x.ocmod.zip»</strong>;</li>
+				<li>После успешной установки перейдите в раздел <strong class="strong">«Меню -> Расширения -> Модификаторы»</strong> и в правом верхнем углу нажмите кнопку «Обновить».</li>
 			</ul>
-			<p>После этого перейдите в раздел <strong class="strong">«Меню -> Система -> Группы пользователей»</strong> и установите права доступа для администратора (в разделах «Разрешить просмотр» и «Разрешить редактирование» выберите <strong class="strong">«extension/module/cs_ad_category»</strong>).<p>
-			<p>Завершив эти шаги, перейдите в раздел <strong class="strong">«Меню -> Расширения -> Модули»</strong> и установите модуль <strong class="strong">«Дополнительное Описание Категориям + Настройки»</strong>.</p>
+			<p>Затем перейдите в раздел <strong class="strong">«Меню -> Система -> Группы пользователей»</strong> и установите права доступа для администратора (в разделах «Разрешить просмотр» и «Разрешить редактирование» выберите <strong class="strong">«extension/module/cs_cd_readmore»</strong>).</p>
+			<p>Завершив эти шаги, перейдите в раздел <strong class="strong">«Меню -> Расширения -> Модули»</strong> и установите модуль <strong class="strong">«JS Readmore Для Описания Категории»</strong>.</p>
 		</div>
 	</article>
 	<article id="setting_extension">
 		<div class="container content">
 			<h2><i class="ics-sliders-h icon-h"></i>Настройка расширения</h2>
-			<p>Для настройки расширения перейдите в <strong class="strong">«Меню -> Расширения -> Модули -> Дополнительное Описание Категориям + Настройки»</strong></p>
+			<p>Для настройки расширения перейдите в раздел <strong class="strong">«Меню -> Расширения -> Модули -> JS Readmore Для Описания Категории»</strong></p>
 			<p class="chapter">Основные параметры настройки:</p>
 			<ul>
-				<li><strong class="strong">Позиции описаний</strong> - позволяет менять местами верхний и нижний опис;</li>
-				<li><strong class="strong">Статус</strong> - отвечает за активацию этого расширения.</li>
-			</ul>
-			<p class="chapter">Дополнительные параметры настройки верхнего и нижнего описания:</p>
-			<ul>
-				<li><strong class="strong">Статус описания</strong> - отображение блока с описанием на сайте;</li>
-				<li><strong class="strong">Статус изображения</strong> - отображает изображение категории рядом с текстом;</li>
-				<li><strong class="strong">Позиция изображения</strong> - определяет, с какой стороны текста разместить изображение;</li>
-				<li><strong class="strong">Описание на страницах пагинации</strong> - настраивает отображение текста на первой странице или на всех;</li>
-				<li><strong class="strong">Статус кнопки «Подробнее»</strong> - позволяет включить или выключить скрипт для всех описаний категорий;</li>
-				<li><strong class="strong">Высота видимого текста</strong> - регулирует количество видимого текста, остальная часть будет скрыта;</li>
+				<li><strong class="strong">Статус</strong> - отвечает за активацию данного расширения.</li>
+				<li><strong class="strong">Статус скрипта «Подробнее»</strong> - позволяет включить или выключить скрипт для всех описаний категорий;</li>
+				<li><strong class="strong">Высота видимого текста</strong> - регулирует количество видимого текста, а остальную часть скрывает;</li>
 				<li><strong class="strong">Разрешение экрана</strong> - настраивает разрешения экрана, на которых этот скрипт будет работать.</li>
 			</ul>
 			<p class="chapter">Статус БД:</p>
@@ -297,32 +283,21 @@
 	</article>
 	<article class="article__grey" id="settings">
 		<div class="container content">
-			<h2><i class="ics-sliders-v icon-h"></i>Настройка в Категориях</h2>
+			<h2><i class="ics-sliders-v icon-h"></i>Настройка в категориях</h2>
 			<p>Чтобы настроить расширение для конкретного товара, перейдите в раздел <strong class="strong">«Меню -> Каталог -> Категории»</strong> и выберите нужную категорию. Дополнительные параметры находятся во вкладке <strong class="strong">«Дизайн»</strong></p>
 			<p class="chapter">Здесь вы можете настроить следующие параметры:</p>
 			<ul>
-				<li><strong class="strong">Статус кнопки «Подробнее»</strong> - включите или выключите скрипт для конкретной категории или оставьте по умолчанию, тогда будут применяться настройки из модуля;</li>
-				<li><strong class="strong">Высота видимого текста</strong> - определите количество текста, которое будет видимым, остальная часть текста будет скрыта.</li>
+				<li><strong class="strong">Статус скрипта «Подробнее»</strong> - включите или выключите скрипт для конкретной категории, или оставьте по умолчанию, тогда будут применяться настройки из модуля;</li>
+				<li><strong class="strong">Высота видимого текста</strong> - определите количество текста, который будет видимым, а остальная часть текста будет скрыта.</li>
 			</ul>
-			<p>Эти настройки позволят вам настроить расширение для конкретных категорий товаров в вашем каталоге.</p>
+			<p>Эти настройки помогут вам настроить расширение для конкретных категорий товаров в вашем каталоге.</p>
 		</div>
 	</article>
 	<article id="stylization">
 		<div class="container content">
 			<h2><i class="ics-palette icon-h"></i>Стилизация</h2>
-			<p>Вы можете изменять верстку блоков с описанием, редактируя файлы, которые находятся по следующим путям:</p>
-			<section class="mt-5">
-				<p>Верхний блок описания:</p>
-				<pre><code class="language-http show-language">/catalog/view/theme/default/template/custom_templates/addons/ad_category_top.(twig/tpl)</code></pre>
-			</section>
-			<section class="mt-5">	
-				<p>Нижний блок описания:</p>
-				<pre><code class="language-http show-language">/catalog/view/theme/default/template/custom_templates/addons/ad_category_bottom.(twig/tpl)</code></pre>
-			</section>
-			<section class="mt-5">	
-				<p>Если стандартный дизайн кнопки «Развернуть / Свернуть» не соответствует вашему сайту, вы можете изменить CSS-стили в файле <strong class="strong">«cs_ad_category.min.css»</strong>, который находится по следующему пути:</p>
-				<pre><code class="language-http show-language">/catalog/view/javascript/cs_libs/css/cs_readmore.min.css</code></pre>
-			</section>
+			<p>Если стандартный дизайн кнопки «Развернуть / Свернуть» не соответствует вашему сайту, вы можете изменить CSS-стили в файле <strong class="strong">«cs_readmore.min.css»</strong>, который находится по следующему пути:</p>
+			<pre><code class="language-http show-language">/catalog/view/javascript/cs_libs/css/cs_readmore.min.css</code></pre>
 		</div>
 	</article>
 	<article class="article__grey" id="problems">
@@ -344,7 +319,7 @@
 					<div class="block">
 						<div class="tags">
 							<h5 class="title release">
-								<span class="version">v3.2</span><span class="date">16.10.2023</span>
+								<span class="version">v1.2</span><span class="date">16.10.2023</span>
 							</h5>
 							<p class="tag"><span>Последний релиз</span></p>
 						</div>
@@ -361,7 +336,7 @@
 					<div class="block">
 						<div class="tags">
 							<h5 class="title">
-								<span class="version">v3.1</span><span class="date">31.05.2023</span>
+								<span class="version">v1.1</span><span class="date">31.05.2023</span>
 							</h5>
 						</div>
 						<div class="block_content">
@@ -376,70 +351,15 @@
 					<div class="block">
 						<div class="tags">
 							<h5 class="title">
-								<span class="version">v3.0</span><span class="date">30.11.2022</span>
+								<span class="version">v1.0</span><span class="date">03.05.2023</span>
 							</h5>
 						</div>
 						<div class="block_content">
 							<p><strong>Добавлено:</strong></p>
 							<ul>
-								<li>Управление позицией изображения.</li>
-							</ul>
-							<p><strong>Изменено:</strong></p>
-							<ul>
-								<li>Одинаковые настройки для версий Opencart 2 и 3;</li>
-								<li>Управление на каких разрешений экранов будет работать скрипт для верхнего и нижнего описания.</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="block">
-						<div class="tags">
-							<h5 class="title">
-								<span class="version">v2.0</span><span class="date">10.06.2021</span>
-							</h5>
-						</div>
-						<div class="block_content">
-							<p><strong>Добавлено для Opencart 3:</strong></p>
-							<ul>
-								<li>Управлять на каких разрешений экранов будет работать скрипт;</li>
-								<li>Менять описания местами;</li>
-								<li>Управлять отображением изображения;</li>
-								<li>Управлять верхним и нижним описанием;</li>
-								<li>Заголовок для нижнего описания.</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="block">
-						<div class="tags">
-							<h5 class="title">
-								<span class="version">v1.0</span><span class="date">12.12.2017</span>
-							</h5>
-						</div>
-						<div class="block_content">
-							<p><strong>Добавлено:</strong></p>
-							<ul>
-								<li>Добавление нижнего описания для версии Opencart 3;</li>
-								<li>Возможность скрывать часть текста.</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="block">
-						<div class="tags">
-							<h5 class="title">
-								<span class="version">v1.0</span><span class="date">26.02.2016</span>
-							</h5>
-						</div>
-						<div class="block_content">
-							<p><strong>Добавлено:</strong></p>
-							<ul>
-								<li>Добавление нижнего описания Opencart 2;</li>
-								<li>Скрывать описание на всех страницах, кроме первой;</li>
 								<li>Управление скриптом для каждого описания индивидуально;</li>
+								<li>Управление скриптом для всех описаний;</li>
+								<li>Управление на разрешениях экранов будет работать скрипт;</li>
 								<li>Возможность скрывать часть текста.</li>
 							</ul>
 						</div>
