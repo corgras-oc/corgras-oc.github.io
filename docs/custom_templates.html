@@ -206,27 +206,39 @@
 	<article class="article__white" id="warning">
 		<div class="container content">
 			<h2><i class="ics-triangle icon-h"></i>Інформація користувачам</h2>
-			<p class="text-center">Будь ласка, уважно ознайомтесь з ним, перш ніж розпочати використання наших продуктів. Ми намагалися забезпечити максимальну сумісність та зручність використання, але деякі аспекти можуть вимагати вашої уваги та налаштувань. Не соромтеся звертатися до нас з будь-якими питаннями чи потребою в допомозі.</p>
-			<div class="row callouts">
-				<div class="col">
-					<div class="card h-100 callout bd-callout-danger">
-						<div class="card-body">
-							<h4 class="card-title"><i class="ics-triangle"></i>Важливо!</h4>
-							<p class="card-text">Модифікатор пройшов тестування на стандартному шаблоні Opencart, але може потребувати адаптацій для інших шаблонів.</p>
-							<p class="card-text">При встановленні створюються додаткові поля в базі даних. Рекомендуємо зробити резервну копію даних перед встановленням для можливості відновлення даних в разі потреби.</p>
-							<p>Зверніть увагу, що коли згадується ШАБЛОН, це окремі файли шаблону у вашій темі, а не вся тема. Ви не можете встановити різні теми для кожного елемента за допомогою цього розширення.</p>
-							<p>Якщо Ви встановили сторонню тему на Opencart 3.x з розширенням файлів <strong>«.tpl»</strong><br> Модифікатор працювати НЕ буде.</p>
-							<p>Створені файли повинні мати розширення файлів <strong>«.twig»</strong></p>
+			<p class="text-center">Будь ласка, уважно ознайомтеся з цією інформацією перед тим, як розпочати використання наших продуктів. Ми намагалися забезпечити максимальну сумісність та зручність використання, але деякі аспекти можуть вимагати вашої уваги та налаштувань. Не соромтеся звертатися до нас з будь-якими питаннями чи потребою в допомозі.</p>
+			<div class="accordion" id="accordionInfo">
+				<div class="accordion-item bd-callout-danger">
+					<h2 class="accordion-header" id="info1">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse1" aria-expanded="false" aria-controls="info-collapse1">
+							<i class="ics-triangle"></i><span>Важливо!</span>
+						</button>
+					</h2>
+					<div id="info-collapse1" class="accordion-collapse collapse" aria-labelledby="info1" data-bs-parent="#accordionInfo">
+						<div class="accordion-body">
+							<ul>
+								<li>Модифікатор пройшов тестування на стандартному шаблоні Opencart, але може потребувати адаптацій для інших шаблонів.</li>
+								<li>При встановленні створюються додаткові поля в базі даних. Рекомендуємо зробити резервну копію даних перед встановленням для можливості відновлення даних в разі потреби.</li>
+								<li>Зверніть увагу, що коли згадується ШАБЛОН, це окремі файли шаблону у вашій темі, а не вся тема. Ви не можете встановити різні теми для кожного елемента за допомогою цього розширення.</li>
+								<li>Якщо Ви встановили сторонню тему на Opencart 3.x з розширенням файлів <strong>«.tpl»</strong><br> Модифікатор працювати НЕ буде.</li>
+								<li>Створені файли повинні мати розширення файлів <strong>«.twig»</strong></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="card h-100 callout bd-callout-primary">
-						<div class="card-body">
-							<h4 class="card-title"><i class="ics-info"></i>Модифікатор не встановлюється?</h4>
-							<p class="card-text">Спробуйте спочатку встановити «Localcopy OCMOD», а потім спробуйте встановити наш модифікатор знову. Ця послідовність може вирішити можливі конфлікти та допоможе вам успішно впровадити наші зміни на вашому сайті.</p>
-							<div class="buttons">
-								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+				<div class="accordion-item bd-callout-primary">
+					<h2 class="accordion-header" id="info2">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse2" aria-expanded="false" aria-controls="info-collapse2">
+							<i class="ics-info"></i><span>Модифікатор не встановлюється?</span>
+						</button>
+					</h2>
+					<div id="info-collapse2" class="accordion-collapse collapse" aria-labelledby="info2" data-bs-parent="#accordionInfo">
+						<div class="accordion-body">
+							<p>Спробуйте спочатку встановити «Localcopy OCMOD», а потім спробуйте встановити наш модифікатор знову. Ця послідовність може вирішити можливі конфлікти та допоможе вам успішно впровадити наші зміни на вашому сайті.</p>
+							<div class="row buttons">
+								<div class="col-12 col-md-4">
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -250,16 +262,17 @@
 	<article id="setting_extension">
 		<div class="container content">
 			<h2><i class="ics-sliders-h icon-h"></i>Налаштування розширення</h2>
-			<p>Для налаштування розширення відвідайте <strong class="strong">«Меню -> Розширення -> Модулі -> Користувальницькі шаблони»</strong>.</p>
+			<p>Перейдіть <strong class="strong">«Меню -> Розширення -> Модулі -> Користувальницькі шаблони»</strong>, та змініть статус розширення на «Увімкнути».</p>
+			<p class="chapter">Як встановити власний файл:</p>
 			<ul>
-				<li><strong class="strong">Статус</strong> - активує або деактивує дане розширення.</li>
-			</ul>
-			<p>Після встановлення на сервері автоматично з'явиться папка <strong>«custom_templates»</strong> за шляхом:</p>
-			<pre><code class="language-http show-language">catalog/view/theme/default/template/custom_templates/</code></pre>
-			<p>Якщо ви використовуєте іншу тему, обов'язково створіть цю папку та внутрішні папки <strong>«category», «information», «manufacturer», «product»</strong>.</p>
-			<ul>
+				<li>
+					<p>Після встановлення на сервері автоматично з'явиться папка <strong>«custom_templates»</strong> за шляхом:</p>
+					<pre><code class="language-http show-language">catalog/view/theme/default/template/custom_templates/</code></pre>
+					<p>Якщо ви використовуєте іншу тему, обов'язково створіть цю папку та внутрішні папки <strong>«category», «information», «manufacturer», «product»</strong>.</<p>
+				</li>
 				<li>У відповідну папку додайте файл із внесеними змінами (назва файлу - латинською, розширення - <strong>«.twig»</strong>).</li>
 			</ul>
+			<p class="chapter">Налаштування в розділі:</p>
 			<p>Для налаштування розширення для конкретного розділу перейдіть в <strong class="strong">«Меню -> Каталог -> (Товари, Категорії, Інформаційні статті, Виробники)»</strong>. Параметри розміщені в <strong class="strong">«Дизайн»</strong>.</p>
 			<ul>
 				<li>Оберіть потрібний шаблон зі списку;</li>
