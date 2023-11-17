@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow">
+	<!--<base href="https://corgras.github.io/">-->
+
+	<title>Documentation of the «HTML-Content PRO» module for Opencart and ocStore</title>
+	<meta name="description" content="The module allows you to create and customize text blocks on the website. Unlimited number of blocks. Flexible configuration according to your needs and design. Full control over the placement and content of the text on your Opencart / ocStore website">
+
+	<link rel="icon" type="image/svg+xml" href="/libs/images/logo/favicon.svg?v=2">
+	<link rel="shortcut alternate icon" type="image/png" href="/libs/images/logo/favicon.png?v=2">
+	<link rel="stylesheet" href="/libs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/libs/css/ics.css">
+	<link rel="stylesheet" href="/libs/css/prism.css">
+
+	<link rel="stylesheet" href="/libs/css/main.css">
+	<link rel="stylesheet" media="screen and (max-width: 991.98px)" href="/libs/css/mobile.css">
+	<link rel="stylesheet" media="screen and (min-width: 992px)" href="/libs/css/desktop.css">
+
+	<link rel="alternate" href="https://corgras-oc.github.io/docs/html_pro" hreflang="uk">
+	<link rel="alternate" href="https://corgras-oc.github.io/ru/docs/html_pro" hreflang="ru">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-TileColor">
+	<meta name="theme-color">
+	<meta name="apple-mobile-web-app-status-bar-style">
+	<meta name="msapplication-navbutton-color">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": "Documentation «HTML-Content PRO»",
+			"datePublished": "2018-02-21",
+			"dateModified": "2023-11-18",
+			"url": "https://corgras-oc.github.io/en/docs/html_pro",
+			"inLanguage": "en",
+			"author": {
+				"@type": "Person",
+				"url": "https://corgras.github.io/en/",
+				"name": "RoS"
+			},
+			"description": "The module allows you to create and customize text blocks on the website. Unlimited number of blocks. Flexible configuration according to your needs and design. Full control over the placement and content of the text on your Opencart / ocStore website",
+			"publisher": {
+				"@type": "Organization",
+				"name": "CORGRAS OpenCart"
+			},
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "https://corgras-oc.github.io/en/docs/html_pro"
+			},
+			"image": {
+				"@type": "ImageObject",
+				"url": "https://corgras-oc.github.io/libs/images/logo/logo.svg"
+			},
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"item": {
+							"@id": "https://corgras-oc.github.io/en/",
+							"name": "Home"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"item": {
+							"@id": "https://corgras-oc.github.io/en/extensions",
+							"name": "Extension"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"item": {
+							"@id": "https://corgras-oc.github.io/en/docs/html_pro",
+							"name": "Documentation «HTML-Content PRO»"
+						}
+					}
+				]
+			}
+		}
+	</script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWTDFYVZP7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-QWTDFYVZP7');
+	</script>
+</head>
+<body>
+<header class="header">
+	<a class="col-2 header__logo" href="/en/">
+		<span><img src="/libs/images/logo/logo_text.svg" alt="«CORGRAS OpenCart»"></span>
+	</a>
+	<nav class="col header__navigation">
+		<ul class="navigation__list">
+			<li>
+				<a href="/en/extensions" class="link" data-title="Extension">
+					<i class="ics-folder"></i><span>Extension</span>
+				</a>
+			</li>
+			<li>
+				<a href="/fixes" class="link" data-title="Fixes">
+					<i class="ics-toolbox"></i><span>Fixes</span>
+				</a>
+			</li>
+			<li>
+				<a href="/en/services" class="link" data-title="Services">
+					<i class="ics-list"></i><span>Services</span>
+				</a>
+			</li>
+			<li>
+				<a href="/en/faq" class="link" data-title="FAQ">
+					<i class="ics-question"></i><span>FAQ</span>
+				</a>
+			</li>
+			<li>
+				<a href="/warez" class="link" data-title="Warez">
+					<i class="ics-shield-virus"></i><span>Warez</span>
+				</a>
+			</li>
+			<li>
+				<a href="/en/support" class="link" data-title="Support">
+					<i class="ics-envelope-text"></i><span>Support</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="col-2 header__navigation-icon">
+		<div class="navigation-icon__lang dropdown-right">
+			<button type="button" class="lang-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				<i class="ics-lang2"></i>
+			</button>
+			<div class="dropdown-menu min-w-0" aria-labelledby="dropdownMenuLang">
+				<a class="dropdown-item link active" href="#" hreflang="en" data-title="English"><span>English</span></a>
+				<a class="dropdown-item link" href="/ru/docs/html_pro" hreflang="ru" data-title="Русский"><span>Русский</span></a>
+				<a class="dropdown-item link" href="/docs/html_pro" hreflang="uk" data-title="Українська"><span>Українська</span></a>
+			</div>
+		</div>
+		<button class="hamburger hamburger--spin-r nav-hamburger__btn" type="button">
+			<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+		</button>
+	</div>
+</header>
+<main>
+	<article class="documentation__heading">
+		<div class="container">
+			<div class="heading-content">
+				<h1><span>Documentation</span> HTML-Content PRO</h1>
+				<p class="subtitle">Allows you to create and customize grids of text blocks on your website. With this tool, you can easily create an unlimited number of text blocks and customize them according to your needs and design. Complete flexibility and control over the placement and content of the text on your website.</p>
+			</div>
+			<div class="card documentation__card">
+				<div class="col__card"><i class="ics-code-branch"></i>Версія: 2.1</div>
+				<div class="col__card"><i class="ics-opencart"></i>OpenCart: 3.x</div>
+				<div class="col__card"><i class="ics-history"></i>Реліз: 18.11.2023</div>
+			</div>
+		</div>
+		<div class="page-nav">
+			<div class="page-prev">
+				<a href="/en/extensions"><i class="prev"></i>Return to the catalog</a>
+			</div>
+			<div class="page-next">
+				<a href="/en/product/html_pro">More about the module<i class="next"></i></a>
+			</div>
+		</div>
+	</article>
+	<article class="article__grey" id="listcontents">
+		<div class="container">
+			<div class="row documentation__nav">
+				<div class="col-6 col-md-4">
+					<a href="#warning">
+						<i class="ics-triangle"></i>
+						<span>1. Information to users</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#installer">
+						<i class="ics-tool"></i>
+						<span>2. Module installation</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#setting_extension">
+						<i class="ics-sliders-h"></i>
+						<span>3. Module configuration</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#stylization">
+						<i class="ics-palette"></i>
+						<span>4. Stylization</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#changes">
+						<i class="ics-history"></i>
+						<span>5. List of changes</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="article__white" id="warning">
+		<div class="container content">
+			<h2><i class="ics-triangle icon-h"></i>Information to users</h2>
+			<p class="text-center">Please carefully review this information before starting to use our products. We have endeavored to provide maximum compatibility and user convenience, but some aspects may require your attention and configuration. Do not hesitate to contact us with any questions or if you need assistance.</p>
+			<div class="accordion" id="accordionInfo">
+				<div class="accordion-item bd-callout-primary">
+					<h2 class="accordion-header" id="info1">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse1" aria-expanded="false" aria-controls="info-collapse1">
+							<i class="ics-info"></i><span>Modifier doesn't install?</span>
+						</button>
+					</h2>
+					<div id="info-collapse1" class="accordion-collapse collapse" aria-labelledby="info1" data-bs-parent="#accordionInfo">
+						<div class="accordion-body">
+							<p>Try first installing «Localcopy OCMOD», and then attempt to install our modifier again. This sequence may resolve potential conflicts and help you successfully implement our changes on your website.</p>
+							<div class="row buttons">
+								<div class="col-12 col-md-4">
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Download for OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+								</div>
+								<div class="col-12 col-md-4">
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Download for OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="article__grey" id="installer">
+		<div class="container content">
+			<h2><i class="ics-tool icon-h"></i>Module installation</h2>
+			<p class="chapter">To install the module, follow these steps:</p>
+			<ul>
+				<li>Log in to the Admin panel and go to <strong class="strong">«Menu -> Extensions -> Extension Installer»</strong>;</li>
+				<li>Upload and install the archive file <strong class="strong">«HTML_Content_Pro_x_OpenCart_x.ocmod.zip»</strong>;</li>
+				<li>After successful installation, go to <strong class="strong">«Menu -> System -> User Groups»</strong> and set access permissions for the administrator (select <strong class="strong">«extension/module/cs_html_content_pro»</strong> in the «Allow Access» and «Allow Modify» sections).</li>
+				<li>Once you've completed these steps, go to <strong class="strong">«Menu -> Extensions -> Modules»</strong> and install the <strong class="strong">«HTML-Content PRO»</strong> module.</li>
+			</ul>
+		</div>
+	</article>
+	<article id="setting_extension">
+		<div class="container content">
+			<h2><i class="ics-sliders-h icon-h"></i>Module configuration</h2>
+			<p>To configure the module, navigate to <strong class="strong">«Menu -> Extensions -> Modules -> HTML-Content PRO»</strong></p>
+			<p class="chapter">Main Configuration Options:</p>
+			<ul>
+				<li><strong class="strong">Module Name</strong> - the name that will be displayed in the admin panel;</li>
+				<li><strong class="strong">Status</strong> - the module status is responsible for displaying the module on the website.</li>
+			</ul>
+			<p class="chapter">Section:</p>
+			<ul>
+				<li><strong class="strong">Image</strong> - inserting images for different screen sizes or one for all;</li>
+				<li><strong class="strong">Video List</strong> - selecting where the video will be inserted;</li>
+				<li><strong class="strong">Video Link</strong> - for supported services, simply insert any video link, others can copy the link from <strong class="strong">"iframe src=""</strong>.</li>
+			</ul>
+			<p class="chapter">Blocks:</p>
+			<ul>
+				<li><strong class="strong">Image</strong> - inserting images for different screen sizes or one for all;</li>
+				<li><strong class="strong">Icon Class</strong> - to display an icon, add its CLASS. Refer to the documentation of the connected library;</li>
+				<li><strong class="strong">Video List</strong> - selecting where the video will be inserted;</li>
+				<li><strong class="strong">Video Link</strong> - for supported services, simply insert any video link, others can copy the link from <strong class="strong">"iframe src=""</strong>;</li>
+				<li><strong class="strong">Media Element Positioning</strong> - positioning media elements relative to text;</li>
+				<li><strong class="strong">Category</strong> - link to a category;</li>
+				<li><strong class="strong">Article</strong> - link to an informational article;</li>
+				<li><strong class="strong">Manufacturer</strong> - link to a manufacturer;</li>
+				<li><strong class="strong">Other Link</strong> - any other link;</li>
+				<li><strong class="strong">Button Name</strong> - text displayed on the button;</li>
+				<li><strong class="strong">Class</strong> - individual CSS class for the block;</li>
+				<li><strong class="strong">Id</strong> - individual CSS identifier for the block;</li>
+				<li><strong class="strong">Attributes</strong> - individual HTML attribute for the block.</li>
+			</ul>
+			<p class="chapter">Settings:</p>
+			<ul>
+				<li><strong class="strong">Content Grid</strong> - the order in which blocks will be displayed;</li>
+				<li><strong class="strong">Class</strong> - individual CSS class for the section;</li>
+				<li><strong class="strong">Id</strong> - individual CSS identifier for the section;</li>
+				<li><strong class="strong">Attributes</strong> - individual HTML attribute for the section;</li>
+				<li><strong class="strong">Columns</strong> - setting the number of columns for different screens;</li>
+				<li><strong class="strong">Text Alignment in Blocks</strong> - aligning the header and text in blocks;</li>
+				<li><strong class="strong">Change Large Image Size</strong> - enable size change for custom / disable for original size display;</li>
+				<li><strong class="strong">Large Image Size (W x H)</strong> - for large screens;</li>
+				<li><strong class="strong">Change Medium Image Size</strong> - enable size change for custom + if no image for medium screens is added, it will be created from the large one. Disable for original size display;</li>
+				<li><strong class="strong">Medium Image Size (W x H)</strong> - for medium screens;</li>
+				<li><strong class="strong">Change Small Image Size</strong> - enable size change for custom + if no image for small screens is added, it will be created from the large one. Disable for original size display;</li>
+				<li><strong class="strong">Small Image Size (W x H)</strong> - for small screens.</li>
+			</ul>
+			<p class="chapter">Access:</p>
+			<ul>
+				<li><strong class="strong">Access</strong> - who will see this block: for all users / only for registered / only for guests;</li>
+				<li><strong class="strong">Customer Groups</strong> - managing access to customer groups.</li>
+			</ul>
+			<p class="chapter">Design:</p>
+			<ul>
+				<li><strong class="strong">Template</strong> - after creating a template for the module, you can select it here.</li>
+			</ul>
+		</div>
+	</article>
+	<article id="stylization">
+		<div class="container content">
+			<h2><i class="ics-palette icon-h"></i>Styling</h2>
+			<p class="chapter">The module has four types of block display:</p>
+			<ul>
+				<li><strong class="strong">cs_html_content_pro</strong> - blocks are displayed in columns / each block can be a link (Template - default);</li>
+				<li><strong class="strong">cs_html_content_pro_item_with_button</strong> - blocks are displayed in columns / links in the form of buttons;</li>
+				<li><strong class="strong">cs_html_content_pro_tabs</strong> - blocks are displayed as tabs;</li>
+				<li><strong class="strong">cs_html_content_pro_accordion</strong> - blocks are displayed as an accordion.</li>
+			</ul>
+			<section class="mt-5">
+				<p class="chapter">You can also create a new module template and place it in the folder:</p>
+				<pre><code class="language-http show-language">catalog/view/theme/default/template/custom_templates/module/html_content_pro/file_name_in_latin.(twig.tpl)</code></pre>
+			</section>
+			<section class="mt-5">
+				<p>If the default design does not match your website's design, you can make changes to the CSS styles in the file <strong class="strong">"cs_html_content_pro.min.css"</strong>, which is located at the following path:</p>
+				<pre><code class="language-http show-language">catalog/view/javascript/cs_libs/css/cs_html_content_pro.css</code></pre>
+			</section>
+		</div>
+	</article>
+	<article class="article__grey" id="problems">
+		<div class="container content">
+			<h2><i class="ics-toolbox icon-h"></i>Problems and solutions</h2>
+			<p class="text-center">If you have any questions or problems, we have collected in this section answers to frequently asked questions and solutions to the most common and common problems.</p>
+			<div class="row justify-content-center buttons">
+				<div class="col-12 col-md-6">
+					<a href="/faq" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Familiarize</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article id="changes">
+		<div class="container">
+			<h2><i class="ics-history icon-h"></i>List of changes</h2>
+			<ul class="list-unstyled timeline">
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title release">
+								<span class="version">v2.1</span><span class="date">18.11.2023</span>
+							</h5>
+							<p class="tag"><span>Latest Release</span></p>
+						</div>
+						<div class="block_content">
+							<p><strong>Changes:</strong></p>
+							<ul>
+								<li>Code optimization.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v2.0</span><span class="date">18.09.2023</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>The module has been completely rewritten</strong></p>
+							<ul>
+								<li>Use of a custom template for the module;</li>
+								<li>Content access management;</li>
+								<li>Insertion of images for different screen sizes;</li>
+								<li>Control over image sizes;</li>
+								<li>Deferred loading of images using browser capabilities;</li>
+								<li>Insertion of videos;</li>
+								<li>Block positioning;</li>
+								<li>Positioning media content within a block;</li>
+								<li>Adding CSS classes and identifiers for sections or blocks;</li>
+								<li>Adding HTML attributes for sections or blocks;</li>
+								<li>Assignment of links to blocks.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<div class="tags">
+							<h5 class="title">
+								<span class="version">v1.0</span><span class="date">31.10.2017</span>
+							</h5>
+						</div>
+						<div class="block_content">
+							<p><strong>Added:</strong></p>
+							<ul>
+								<li>Displaying text blocks on the website;</li>
+								<li>Creating an unlimited number of blocks;</li>
+								<li>Using icon fonts;</li>
+								<li>Assigning: image and/or icon;</li>
+								<li>Assigning CLASS and/or ID.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</article>
+	<aside class="aside__donate">
+		<div class="container">
+			<h2>If you would like to support the author</h2>
+			<p class="text-center">You can do this with help: PayPal or Credit Card</p>
+			<div class="row justify-content-center buttons">
+				<div class="col-12 col-md-6">
+					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Donate</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
+				</div>
+			</div>
+		</div>
+	</aside>
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col footer__copyrights"><span>© <script>document.write(new Date().getFullYear());</script> CORGRAS. All rights reserved</span></div>
+		</div>
+	</div>
+</footer>
+
+<a id="scrollTop" class="btn-scrollTop"><i class="ics-d-arrow-up"></i></a>
+
+<!-- SCRIPT -->
+<script src="/libs/js/bootstrap.bundle.min.js"></script>
+<script src="/libs/js/prism.js"></script>
+<script src="/libs/js/common.js"></script>
+<script>Prism.highlightAll();</script>
+<!-- END SCRIPT -->
+
+</body>
+</html>
