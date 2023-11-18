@@ -168,14 +168,9 @@
 			<div class="page-prev">
 				<a href="/en/extensions"><i class="prev"></i>Return to the catalog</a>
 			</div>
-			<div class="page-details">
-				<a href="/en/product/additional_description_categories">
-					<i class="prev"></i>More about the modifier<i class="next"></i>
-				</a>
-			</div>
 			<div class="page-next">
-				<a href="#listcontents">Skip to content<i class="next"></i></a>
-			</div> 
+				<a href="/en/product/additional_description_categories">More about the modifier<i class="next"></i></a>
+			</div>
 		</div>
 	</article>
 	<article class="article__grey" id="listcontents">
@@ -223,25 +218,39 @@
 	<article class="article__white" id="warning">
 		<div class="container content">
 			<h2><i class="ics-triangle icon-h"></i>Information to users</h2>
-			<p class="text-center">Please carefully review this information before using our products. We have aimed to provide maximum compatibility and ease of use, but some aspects may require your attention and configuration. Feel free to reach out to us with any questions or if you need assistance.</p>
-			<div class="row callouts">
-				<div class="col">
-					<div class="card h-100 callout bd-callout-danger">
-						<div class="card-body">
-							<h4 class="card-title"><i class="ics-triangle"></i>Important!</h4>
-							<p class="card-text">The modifier has been tested on the standard Opencart template but may require adaptation for other templates.</p>
-							<p class="card-text">During installation, additional fields are created in the database. We recommend creating a backup of your data before installation for data recovery if needed.</p>
+			<p class="text-center">Please carefully review this information before starting to use our products. We have endeavored to provide maximum compatibility and user convenience, but some aspects may require your attention and configuration. Do not hesitate to contact us with any questions or if you need assistance.</p>
+			<div class="accordion" id="accordionInfo">
+				<div class="accordion-item bd-callout-danger">
+					<h2 class="accordion-header" id="info1">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse1" aria-expanded="false" aria-controls="info-collapse1">
+							<i class="ics-triangle"></i><span>Important!</span>
+						</button>
+					</h2>
+					<div id="info-collapse1" class="accordion-collapse collapse" aria-labelledby="info1" data-bs-parent="#accordionInfo">
+						<div class="accordion-body">
+							<ul>
+								<li>The modifier has been tested on the standard Opencart template but may require adaptation for other templates.</li>
+								<li>During installation, additional fields are created in the database. We recommend creating a backup of your data before installation for data recovery if needed.</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="card h-100 callout bd-callout-primary">
-						<div class="card-body">
-							<h4 class="card-title"><i class="ics-info"></i>Modifier doesn't install?</h4>
-							<p class="card-text">Try first installing «Localcopy OCMOD», and then attempt to install our modifier again. This sequence may resolve potential conflicts and help you successfully implement our changes on your website.</p>
-							<div class="buttons">
-								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Download for OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Download for OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+				<div class="accordion-item bd-callout-primary">
+					<h2 class="accordion-header" id="info2">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse2" aria-expanded="false" aria-controls="info-collapse2">
+							<i class="ics-info"></i><span>Modifier doesn't install?</span>
+						</button>
+					</h2>
+					<div id="info-collapse2" class="accordion-collapse collapse" aria-labelledby="info2" data-bs-parent="#accordionInfo">
+						<div class="accordion-body">
+							<p>Try first installing «Localcopy OCMOD», and then attempt to install our modifier again. This sequence may resolve potential conflicts and help you successfully implement our changes on your website.</p>
+							<div class="row buttons">
+								<div class="col-12 col-md-4">
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Download for OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+								</div>
+								<div class="col-12 col-md-4">
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Download for OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
