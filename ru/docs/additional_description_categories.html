@@ -168,14 +168,9 @@
 			<div class="page-prev">
 				<a href="/ru/extensions"><i class="prev"></i>Вернуться в каталог</a>
 			</div>
-			<div class="page-details">
-				<a href="/ru/product/additional_description_categories">
-					<i class="prev"></i>Подробнее о модификаторе<i class="next"></i>
-				</a>
-			</div>
 			<div class="page-next">
-				<a href="#listcontents">Перейти к содержанию<i class="next"></i></a>
-			</div> 
+				<a href="/ru/product/additional_description_categories">Подробнее о модификаторе<i class="next"></i></a>
+			</div>
 		</div>
 	</article>
 	<article class="article__grey" id="listcontents">
@@ -223,25 +218,39 @@
 	<article class="article__white" id="warning">
 		<div class="container content">
 			<h2><i class="ics-triangle icon-h"></i>Информация пользователям</h2>
-			<p class="text-center">Пожалуйста, внимательно ознакомьтесь с ним перед началом использования наших продуктов. Мы старались обеспечить максимальную совместимость и удобство использования, но некоторые аспекты могут требовать вашего внимания и настройки. Не стесняйтесь обращаться к нам с любыми вопросами или потребностью в помощи.</p>
-			<div class="row callouts">
-				<div class="col">
-					<div class="card h-100 callout bd-callout-danger">
-						<div class="card-body">
-							<h4 class="card-title"><i class="ics-triangle"></i>Важно!</h4>
-							<p class="card-text">Модификатор прошел тестирование на стандартном шаблоне Opencart, но может потребовать адаптации для других шаблонов.</p>
-							<p class="card-text">При установке создаются дополнительные поля в базе данных. Рекомендуем сделать резервную копию данных перед установкой для возможности восстановления данных в случае необходимости.</p>
+			<p class="text-center">Пожалуйста, внимательно ознакомьтесь с этой информацией перед началом использования наших продуктов. Мы стремились обеспечить максимальную совместимость и удобство использования, но некоторые аспекты могут требовать вашего внимания и настройки. Не стесняйтесь обращаться к нам с любыми вопросами или запросом помощи.</p>
+			<div class="accordion" id="accordionInfo">
+				<div class="accordion-item bd-callout-danger">
+					<h2 class="accordion-header" id="info1">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse1" aria-expanded="false" aria-controls="info-collapse1">
+							<i class="ics-triangle"></i><span>Важно!</span>
+						</button>
+					</h2>
+					<div id="info-collapse1" class="accordion-collapse collapse" aria-labelledby="info1" data-bs-parent="#accordionInfo">
+						<div class="accordion-body">
+							<ul>
+								<li>Модификатор прошел тестирование на стандартном шаблоне Opencart, но может потребовать адаптации для других шаблонов.</li>
+								<li>При установке создаются дополнительные поля в базе данных. Рекомендуем сделать резервную копию данных перед установкой для возможности восстановления данных в случае необходимости.</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="card h-100 callout bd-callout-primary">
-						<div class="card-body">
-							<h4 class="card-title"><i class="ics-info"></i>Модификатор не устанавливается?</h4>
-							<p class="card-text">Попробуйте сначала установить «Localcopy OCMOD», а затем попробуйте установить наш модификатор снова. Эта последовательность может разрешить возможные конфликты и поможет вам успешно внедрить наши изменения на вашем сайте.</p>
-							<div class="buttons">
-								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Загрузить для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-								<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Загрузить для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+				<div class="accordion-item bd-callout-primary">
+					<h2 class="accordion-header" id="info2">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse2" aria-expanded="false" aria-controls="info-collapse2">
+							<i class="ics-info"></i><span>Модификатор не устанавливается?</span>
+						</button>
+					</h2>
+					<div id="info-collapse2" class="accordion-collapse collapse" aria-labelledby="info2" data-bs-parent="#accordionInfo">
+						<div class="accordion-body">
+							<p>Попробуйте сначала установить «Localcopy OCMOD», а затем попробуйте установить наш модификатор снова. Эта последовательность может разрешить возможные конфликты и поможет вам успешно внедрить наши изменения на вашем сайте.</p>
+							<div class="row buttons">
+								<div class="col-12 col-md-4">
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Загрузить для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+								</div>
+								<div class="col-12 col-md-4">
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Загрузить для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
