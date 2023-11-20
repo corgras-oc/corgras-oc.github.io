@@ -245,6 +245,7 @@ p + .buttons {
 	display: flex;
 	justify-content: center
 }
+
 .btn {
 	border-radius: var(--button-border-radius);
 	outline: none;
@@ -282,17 +283,17 @@ i.btn-icon-left {
 /* -- BUTTON SIZE -- */
 .btn-default {
 	font-size: 1.5rem;
-	padding: 1.3rem 4rem;
+	padding: 1.3rem 2.6rem;
 }
 .btn-default.btn-xl {
 	width: 70%;
 }
 .btn-small {
-	font-size: 1.3rem;
-	padding: 1rem 3rem;
+	font-size: 1.5rem;
+	padding: 1.3rem 2.6rem;
 }
 .btn-small.btn-sm {
-	width: 45%;
+	width: auto;
 }
 
 /* -- BUTTON COLOR -- */
@@ -318,6 +319,57 @@ i.btn-icon-left {
 	background: var(--bg-white);
 	border: 1px solid var(--bg-dark);
 }
+
+
+
+.btn-dropdown{width:70%;}
+.btn-dropdown .dropdown-menu{width:100%;}
+.btn.dropdown-toggle{justify-content:space-between;}
+.btn.dropdown-toggle::after{display:none}
+.btn.dropdown-toggle i{font-size:1.5rem;}
+.btn-dropdown .btn-default.btn-xl {
+	width: 100%;
+}
+
+
+.btn-dropdown .dropdown-menu {
+		display: block;
+		right: 0 !important;
+		left: auto !important;
+		top: 100%;
+		z-index: 10;
+		background-color: var(--bg-white);
+		box-shadow: 2px 4px 20px 1px rgba(45, 45, 45, 0.13);
+		padding: 1.2rem 0;
+		margin-top: 1.6rem;
+		border-radius: var(--border-radius);
+		transition: all 0.2s;
+		transform: translateY(54px) !important;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.btn-dropdown .dropdown-menu.show {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+		border: 0
+	}
+.btn-dropdown .dropdown-menu a{
+	font-size: 1.3rem;
+	text-align: left;
+	display:flex;
+	justify-content:space-between;padding: .7rem 2.6rem
+}
+.btn-dropdown .dropdown-menu a.active,
+.btn-dropdown .dropdown-menu a:hover {
+		color: var(--color-blue);
+		background: none;
+	}
+
+
+
+
+
 
 .info-card {
 	padding: 1.5rem 2rem;
@@ -766,16 +818,26 @@ footer .footer__copyrights {
 .faq-section .accordion {
 	margin: 4rem 0 6rem;
 }
-.faq-section .accordion-header {
+.accordion-header {
 	margin-bottom: 0;
 }
-.faq-section .accordion-item {
+.accordion-item {
 	border-radius: var(--border-radius) !important;
 	margin-bottom: 1.6rem;
 	border: 1px solid var(--border-grey-dark) !important;
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(45, 45, 45, 0.13), 0 0.125rem 0.4rem -0.0625rem rgba(45, 45, 45, 0.10) !important
 }
-.faq-section .accordion-button {
+.accordion-item.bd-callout-danger {
+	border-left-width: .5rem !important;
+	border-radius: var(--border-radius) !important;
+	border-left-color: var(--bs-danger) !important;
+}
+.accordion-item.bd-callout-primary {
+	border-left-width: .5rem !important;
+	border-radius: var(--border-radius) !important;
+	border-left-color: var(--border-blue) !important;
+}
+.accordion-button {
 	font-size: 1.5rem;
 	position: relative;
 	display: flex;
@@ -788,39 +850,69 @@ footer .footer__copyrights {
 	overflow-anchor: none;
 	transition: all 0.4s;
 }
-.faq-section .accordion-button > span {
+.accordion-item.bd-callout-primary .accordion-button,
+.accordion-item.bd-callout-danger .accordion-button{
+	font-size: 1.7rem;
+}
+.accordion-button > i {
+	font-size: 3.3rem;
+    margin-right: 1.5rem;
+}
+.accordion-button > span {
 	margin-right: 2rem
 }
-.faq-section .accordion .accordion-button:hover,
-.faq-section .accordion .accordion-button:focus,
-.faq-section .accordion .accordion-button:not(.collapsed),
-.faq-section .accordion .accordion-button:active {
+.accordion .accordion-button:hover,
+.accordion .accordion-button:focus,
+.accordion .accordion-button:not(.collapsed),
+.accordion .accordion-button:active {
 	box-shadow: none;
 	background-color: inherit;
 	color: var(--color-blue);
 }
-.faq-section .accordion .accordion-button::after {
+.accordion .accordion-button::after {
 	width: 20px;
 	height: 16px;
 	background-size: 20px;
 	transition: all .35s;
 }
-.faq-section .accordion-button:not(.collapsed)::after {
+.accordion-button:not(.collapsed)::after {
 	transform: rotate(-180deg);
 }
-.faq-section .accordion .accordion-body {
+.accordion .accordion-body {
 	padding: 0 3rem 2.5rem 3rem;
 }
-.faq-section .accordion .accordion-body .buttons {
-	display: flex;
-	justify-content: space-between;
-	width: 50%;
-	gap: 3rem;
-	margin-top: 1.5rem;
+.accordion .accordion-body .buttons > div {
+	justify-content: flex-start;
 }
-.faq-section .accordion .accordion-body .buttons .btn {
-	width:100%;
+
+.bd-callout-danger .accordion-button:hover,
+.bd-callout-danger .accordion-button:focus,
+.bd-callout-danger .accordion-button:not(.collapsed),
+.bd-callout-danger .accordion-button:active,
+.bd-callout-danger .accordion-button{
+	color: var(--bs-danger) !important;
 }
+.bd-callout-primary .accordion-button:hover,
+.bd-callout-primary .accordion-button:focus,
+.bd-callout-primary .accordion-button:not(.collapsed),
+.bd-callout-primary .accordion-button:active,
+.bd-callout-primary .accordion-button {
+	color: var(--color-blue) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -- DOCUMENTATION HEADING -- */
 .documentation__heading {
