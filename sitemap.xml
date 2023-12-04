@@ -1,135 +1,597 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-	<loc>https://corgras-oc.github.io/</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/extensions</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/extensions</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/fixes</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/fixes</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/services</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/services</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/faq</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/faq</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/warez</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/warez</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/support</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/support</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/en/</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/en/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/ru/</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/ru/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/en/extensions</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/articles/html_pro</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/ru/extensions</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/docs/html_pro</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/docs/additional_description_categories</loc>
-	<lastmod>2023-10-12T17:03:01+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/articles/category_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/en/services</loc>
-	<lastmod>2023-10-12T17:03:03+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/docs/category_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/ru/services</loc>
-	<lastmod>2023-10-12T17:03:03+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/en/extensions</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/en/faq</loc>
-	<lastmod>2023-10-12T17:03:03+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/ru/extensions</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/ru/faq</loc>
-	<lastmod>2023-10-12T17:03:03+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/product/additional_description_categories</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/en/warez</loc>
-	<lastmod>2023-10-12T17:03:04+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/docs/additional_description_categories</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/ru/warez</loc>
-	<lastmod>2023-10-12T17:03:04+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/product/html_plus</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/en/support</loc>
-	<lastmod>2023-10-12T17:03:04+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/docs/html_plus</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/ru/support</loc>
-	<lastmod>2023-10-12T17:03:04+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.8</priority>
+<loc>https://corgras-oc.github.io/product/html_pro</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/en/docs/additional_description_categories</loc>
-	<lastmod>2023-10-12T17:03:06+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/product/unit</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 <url>
-	<loc>https://corgras-oc.github.io/ru/docs/additional_description_categories</loc>
-	<lastmod>2023-10-12T17:03:06+01:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
+<loc>https://corgras-oc.github.io/docs/unit</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/product/reply_to_reviews</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/docs/reply_to_reviews</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/product/product_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/docs/product_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/product/category_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/product/custom_templates</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/docs/custom_templates</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/fixes</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/fixes</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/fixes/fix_localcopy</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/fixes/fix_modification</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/fixes/fix_theme_editor</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/services</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/services</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/faq</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/faq</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/warez</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/warez</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/support</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/support</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/product/category_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/docs/category_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/product/html_pro</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/docs/html_pro</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/product/category_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/docs/category_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/docs/html_pro</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/product/additional_description_categories</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/docs/additional_description_categories</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/product/html_plus</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/docs/html_plus</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/product/html_pro</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/product/unit</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/docs/unit</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/product/reply_to_reviews</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/docs/reply_to_reviews</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/product/product_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/docs/product_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/product/custom_templates</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/en/docs/custom_templates</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/product/additional_description_categories</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/docs/additional_description_categories</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/product/html_plus</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/docs/html_plus</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/product/unit</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/docs/unit</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/product/reply_to_reviews</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/docs/reply_to_reviews</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/product/product_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/docs/product_description_readmore</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/product/custom_templates</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/ru/docs/custom_templates</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/additional_description_categories/ad_category_mod_top.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/additional_description_categories/ad_category_mod_bottom.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/additional_description_categories/ad_category_form.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/additional_description_categories/ad_category_design.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/additional_description_categories/ad_category_frontend.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_plus/html_plus_general.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_plus/html_plus_settings_1.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_plus/html_plus_settings_2.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_plus/html_plus_access.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_plus/html_plus_design.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_plus/html_plus_frontend_1.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_plus/html_plus_frontend_2.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_general.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_item_1.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_item_2.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_settings_1.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_settings_2.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_settings_3.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_access.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_design.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_frontend_1.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_frontend_2.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_frontend_3.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/html_pro/html_pro_frontend_4.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
+</url>
+<url>
+<loc>https://corgras-oc.github.io/libs/images/docs/product_description_readmore/pd_readmore_mod_general.webp</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-12-04</lastmod>
 </url>
 </urlset>
