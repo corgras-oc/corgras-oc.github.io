@@ -85,11 +85,6 @@
 					<i class="ics-toolbox"></i><span>Фікси</span>
 				</a>
 			</li>
-			<li>
-				<a href="/services" class="link" data-title="Послуги">
-					<i class="ics-list"></i><span>Послуги</span>
-				</a>
-			</li>
 			<li class="active">
 				<a href="/faq" class="active link" data-title="Питання-відповідь">
 					<i class="ics-question"></i><span>Питання-відповідь</span>
@@ -139,12 +134,16 @@
 						<div class="accordion-body" itemprop="text">
 							<ul>
 								<li>Завантажте та встановіть розширення Localcopy OCMOD;
-									<span class="buttons">
-										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									</span>
+									<div class="row-btn">
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+									</div>
 								</li>
-								<li>Після встановлення цього додатка потрібно перейти до розділу <span class="strong">«Меню -> Розширення -> Модифікатори»</span> та натиснути кнопку <span class="strong">«Оновити модифікатори»</span>;</li>
+								<li>Після встановлення цього додатка потрібно перейти до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Модифікатори</span> та натиснути кнопку <span class="badge text-bg-primary">Оновити модифікатори</span>;</li>
 								<li>Тепер можна інсталювати інші модулі.</li>
 							</ul>
 						</div>
@@ -161,10 +160,12 @@
 							<p>Можливо кілька проблем та варіантів їх вирішення:</p>
 							<ul>
 								<li>Не скинутий кеш шаблону – потрібно оновити кеш;</li>
-								<li>Ви раніше редагували файли шаблону через адмінку в розділі <span class="strong">«Меню -> Дизайн -> Редактор шаблону»</span>, тоді цей файл зберігся в базі даних і на нього вже не впливають ocmod-модифікатори, це проблема Opencart 3. Вам потрібно встановити фікс та оновити модифікації в адмінці;
-									<span class="buttons">
-										<a href="https://github.com/corgras-oc/Fix_Theme_Editor_OpenCart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									</span>
+								<li>Ви раніше редагували файли шаблону через адмінку в розділі <span class="badge text-bg-primary">Меню -> Дизайн -> Редактор шаблону</span>, тоді цей файл зберігся в базі даних і на нього вже не впливають ocmod-модифікатори, це проблема Opencart 3. Вам потрібно встановити фікс та оновити модифікації в адмінці;
+									<div class="row-btn">
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_Theme_Editor_OpenCart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+									</div>
 								</li>
 								<li>Ваш шаблон влаштований на TPL-файлах (*.tpl), у той час, коли в Opencart 3 шаблони мають бути у форматі TWIG (*.twig). Проблема в тому, що ocmod модифікатори не впливають на TPL-файли - всі зміни потрібно вносити в ці файли вручну.</li>
 							</ul>
@@ -179,16 +180,18 @@
 					</h2>
 					<div id="faq-collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#accordionFaq" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 						<div class="accordion-body" itemprop="text">
-							<p>В офіційних збірках Opencart 3.0.3.5 - 3.0.3.6 є баг - там модифікатори не працюють з twig-файлами через помилку в стандартному модифікаторі <span class="strong">«/system/modification.xml»</span> - друга операція цього модифікатора не спрацьовує.</p>
+							<p>В офіційних збірках Opencart 3.0.3.5 - 3.0.3.6 є баг - там модифікатори не працюють з twig-файлами через помилку в стандартному модифікаторі <span class="badge text-bg-warning">/system/modification.xml</span> - друга операція цього модифікатора не спрацьовує.</p>
 							<p>Проблема є на офіційному GitHub та запропоновано рішення на <a href="https://github.com/opencart/opencart/blob/3.0.x.x_Maintenance/upload/system/modification.xml" target="_blank">GitHub</a>.</p>
-							<p>Фікс-модифікатор за цими рекомендаціями, він замінить файл <span class="strong">«/system/modification.xml»</span> на вірний.</p>
+							<p>Фікс-модифікатор за цими рекомендаціями, він замінить файл <span class="badge text-bg-warning">/system/modification.xml</span> на вірний.</p>
 							<p><strong>Рішення проблеми:</strong></p>
 							<ul>
-								<li>Зробіть резервну копію файлу <span class="strong">«/system/modification.xml»</span>;</li>
+								<li>Зробіть резервну копію файлу <span class="badge text-bg-warning">/system/modification.xml</span>;</li>
 								<li>Завантажте фікс-модифікатор та встановіть його у себе в адмінці;
-									<span class="buttons">
-										<a href="https://github.com/corgras-oc/Fix_Modification_Opencart_3.0.3.5-3.0.3.6/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									</span>
+									<div class="row-btn">
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_Modification_Opencart_3.0.3.5-3.0.3.6/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+									</div>
 								</li>
 								<li>Оновіть кеш модифікаторів;</li>
 								<li>Обновіть кеш twig-шаблонів.</li>
@@ -205,7 +208,7 @@
 					<div id="faq-collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#accordionFaq" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 						<div class="accordion-body" itemprop="text">
 							<p>Якщо модуль не реагує на ваші дії, будь-то натискання на кнопку або завантаження карти або вибір дати або на будь-яку іншу дію, яка є у функціоналі модуля, швидше за все стався конфлікт у JS-скриптах.</p>
-							<p>Натисніть F12 на проблемній сторінці в браузері - відкриється панель вебмайстра, де на вкладці <span class="strong">«Console»</span> можна побачити конфлікти в скриптах, якщо вони є. Ця дія доступна в браузерах Chrome, Opera, Firefox.</p>
+							<p>Натисніть F12 на проблемній сторінці в браузері - відкриється панель вебмайстра, де на вкладці <span class="badge text-bg-dark">Console</span> можна побачити конфлікти в скриптах, якщо вони є. Ця дія доступна в браузерах Chrome, Opera, Firefox.</p>
 						</div>
 					</div>
 				</div>
@@ -219,12 +222,16 @@
 						<div class="accordion-body" itemprop="text">
 							<ul>
 								<li>Завантажте та встановіть розширення Localcopy OCMOD;
-									<span class="buttons">
-										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									</span>
+									<div class="row-btn">
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+									</div>
 								</li>
-								<li>Після встановлення цього додатка потрібно перейти до розділу <span class="strong">«Меню -> Розширення -> Модифікатори»</span> та натиснути кнопку <span class="strong">«Оновити модифікатори»</span>;</li>
+								<li>Після встановлення цього додатка потрібно перейти до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Модифікатори</span> та натиснути кнопку <span class="badge text-bg-primary">Оновити модифікатори</span>;</li>
 								<li>Тепер можна інсталювати інші модулі.</li>
 							</ul>
 						</div>
@@ -241,8 +248,8 @@
 							<p>Помилка 500 після встановлення модуля означає, що трапилася якась критична помилка у php.</p>
 							<p class="strong">Для визначення проблеми можна:</p>
 							<ul>
-								<li>Відкрити файл <span class="strong">«logs/error.log»</span> на вашому сервері. Наприкінці цього файлу будуть усі останні критичні помилки;</li>
-								<li>Відкрити в адмінці <span class="strong">«Меню -> Інструменти -> Логи помилок»</span> - тут відображаються помилки, але не завжди;</li>
+								<li>Відкрити файл <span class="badge text-bg-warning">logs/error.log</span> на вашому сервері. Наприкінці цього файлу будуть усі останні критичні помилки;</li>
+								<li>Відкрити в адмінці <span class="badge text-bg-primary">Меню -> Інструменти -> Логи помилок</span> - тут відображаються помилки, але не завжди;</li>
 								<li><p>Включить вывод ошибок php на экран - добавить следующий код в конец файла .htaccess:</p>
 									<pre><code class="language-markdown show-language">
 										php_value display_errors 1
@@ -266,10 +273,14 @@
 							<p><strong>Можливі причини цієї проблеми:</strong></p>
 							<ul>
 								<li>Якщо ви раніше не завантажували модулі в архіві через адмінку - вам потрібно встановити безкоштовну модифікацію Localcopy OCMOD згідно з інструкцією та після цього перевстановити модуль;
-									<span class="buttons">
-										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									</span>
+									<div class="row-btn">
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+									</div>
 								</li>
 								<li>Можливо, у модулі немає власної сторінки налаштувань, і відповідно його не буде в списку модулів.</li>
 							</ul>
@@ -286,13 +297,17 @@
 						<div class="accordion-body" itemprop="text">
 							<p><strong>Існують два способи вирішення цієї проблеми:</strong></p>
 							<p>1. Якщо під час встановлення модуля з адмінки вилітає ця помилка - вам потрібно встановити Localcopy OCMOD:
-								<span class="buttons">
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-								</span>
+								<div class="row-btn">
+									<div class="col-12 col-md-4">
+										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+									</div>
+									<div class="col-12 col-md-4">
+										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+									</div>
+								</div>
 							</p>
 							<p>Вона встановлюється без проблем через той самий інсталятор додатків, тільки після встановлення не забудьте оновити модифікації і потім можете приступати до встановлення будь-яких модулів на Opencart 2</p>
-							<p>2. Також вирішити цю помилку можна інакше: прописати доступи до FTP в адмінці <span class="strong">«Меню -> Система -> Налаштування -> Магазин -> вкладка FTP»</span>.</p>
+							<p>2. Також вирішити цю помилку можна інакше: прописати доступи до FTP в адмінці <span class="badge text-bg-primary">Меню -> Система -> Налаштування -> Магазин -> вкладка FTP</span>.</p>
 						</div>
 					</div>
 				</div>
@@ -305,12 +320,16 @@
 					<div id="faq-collapse9" class="accordion-collapse collapse" aria-labelledby="faq9" data-bs-parent="#accordionFaq" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 						<div class="accordion-body" itemprop="text">
 							<p>Якщо ви бачите повідомлення <span class="strong">«Доступ заборонено! У вас немає прав на доступ до цієї сторінки. Якщо вона вам потрібна, зверніться до адміністратора»</span> - потрібно надати права адміністраторам на керування модулем або сторінкою.</p>
-							<p><span class="strong">Рішення:</span> в адмінці Opencart 2 переходимо в <span class="strong">«Меню -> Система -> Користувачі -> Групи користувачів»</span>, вибираємо групи користувачів, які повинні мати доступ до цього модулю, і тут натискаємо <span class="strong">«Виділити все»</span> нижче за обидва блоки, потім <span class="strong">«Зберегти»</span>.</p>
+							<p><span class="strong">Рішення:</span> в адмінці Opencart 2 переходимо в <span class="badge text-bg-primary">Меню -> Система -> Користувачі -> Групи користувачів</span>, вибираємо групи користувачів, які повинні мати доступ до цього модулю, і тут натискаємо <span class="strong">«Виділити все»</span> нижче за обидва блоки, потім <span class="strong">«Зберегти»</span>.</p>
 							<p>Ще однією причиною появи цієї помилки може бути неправильне встановлення модуля - файли не завантажилися на свої місця. Завантажте файли модуля вручну на сервер або встановіть фікс Localcopy OCMOD та перевстановіть модуль.
-								<span class="buttons">
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-								</span>
+								<div class="row-btn">
+									<div class="col-12 col-md-4">
+										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+									</div>
+									<div class="col-12 col-md-4">
+										<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+									</div>
+								</div>
 							</p>
 						</div>
 					</div>
@@ -323,7 +342,7 @@
 					</h2>
 					<div id="faq-collapse10" class="accordion-collapse collapse" aria-labelledby="faq10" data-bs-parent="#accordionFaq" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 						<div class="accordion-body" itemprop="text">
-							<p>В адмінці Opencart 2 переходимо в <span class="strong">«Меню -> Система -> Користувачі -> Групи користувачів»</span> і тут натискаємо <span class="strong">«Виділити все»</span> нижче за обидва блоки, потім <span class="strong">«Зберегти»</span></p>
+							<p>В адмінці Opencart 2 переходимо в <span class="badge text-bg-primary">Меню -> Система -> Користувачі -> Групи користувачів</span> і тут натискаємо <span class="strong">«Виділити все»</span> нижче за обидва блоки, потім <span class="strong">«Зберегти»</span></p>
 						</div>
 					</div>
 				</div>
@@ -335,8 +354,8 @@
 					</h2>
 					<div id="faq-collapse11" class="accordion-collapse collapse" aria-labelledby="faq11" data-bs-parent="#accordionFaq" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 						<div class="accordion-body" itemprop="text">
-							<p>Якщо модуль - це один XML файл, його розширення має бути .ocmod.xml</p>
-							<p>Якщо модуль - це ocmod.zip архів, його не потрібно розпаковувати, а встановлювати як є. У такому архіві обов'язково має бути папка upload (може бути порожньою), а також можуть бути модифікаційні файли: install.xml, install.php, install.sql. Ніяких інших файлів докорінно архіву не повинно бути.</p>
+							<p>Якщо модуль - це один XML файл, його розширення має бути <span class="badge text-bg-dark">.ocmod.xml</span></p>
+							<p>Якщо модуль - це <span class="badge text-bg-dark">ocmod.zip</span> архів, його не потрібно розпаковувати, а встановлювати як є. У такому архіві обов'язково має бути папка upload (може бути порожньою), а також можуть бути модифікаційні файли: <span class="badge text-bg-dark">install.xml</span>, <span class="badge text-bg-dark">install.php</span>, <span class="badge text-bg-dark">install.sql</span>. Ніяких інших файлів докорінно архіву не повинно бути.</p>
 						</div>
 					</div>
 				</div>
@@ -348,7 +367,7 @@
 					</h2>
 					<div id="faq-collapse12" class="accordion-collapse collapse" aria-labelledby="faq12" data-bs-parent="#accordionFaq" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 						<div class="accordion-body" itemprop="text">
-							<p>Ця помилка означає, що в архіві, що завантажується, відсутня папка upload. Навіть якщо у модуля немає файлів, крім модифікацій - ця папка має бути присутня в архіві модуля .ocmod.zip, тоді вона повинна залишатися порожньою.</p>
+							<p>Ця помилка означає, що в архіві, що завантажується, відсутня папка <span class="badge text-bg-warning">upload</span>. Навіть якщо у модуля немає файлів, крім модифікацій - ця папка має бути присутня в архіві модуля <span class="badge text-bg-dark">.ocmod.zip</span>, тоді вона повинна залишатися порожньою.</p>
 						</div>
 					</div>
 				</div>
@@ -361,8 +380,8 @@
 					<div id="faq-collapse13" class="accordion-collapse collapse" aria-labelledby="faq13" data-bs-parent="#accordionFaq" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 						<div class="accordion-body" itemprop="text">
 							<p>Ця помилка означає, що ви намагаєтеся встановити модифікатор, який вже встановлено або, можливо, у якогось вашого модуля такий самий ID.</p>
-							<p>Для вирішення цієї помилки вам потрібно перед встановленням видалити стару версію модифікації в розділі <span class="strong">«Меню -> Розширення -> Модифікатори»</span>.</p>
-							<p>Якщо такого модуля у вас немає, але збігається ID, тоді потрібно змінити значення параметра <span class="strong">&lt;code&gt;</span> у встановлюваному модифікаторі XML, зробити цей параметр унікальним, дописавши кілька символів.</p>
+							<p>Для вирішення цієї помилки вам потрібно перед встановленням видалити стару версію модифікації в розділі <span class="badge text-bg-primary">Меню -> Розширення -> Модифікатори</span>.</p>
+							<p>Якщо такого модуля у вас немає, але збігається ID, тоді потрібно змінити значення параметра <span class="badge text-bg-dark">&lt;code&gt;</span> у встановлюваному модифікаторі XML, зробити цей параметр унікальним, дописавши кілька символів.</p>
 						</div>
 					</div>
 				</div>
@@ -375,9 +394,9 @@
 					<div id="faq-collapse14" class="accordion-collapse collapse" aria-labelledby="faq14" data-bs-parent="#accordionFaq" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 						<div class="accordion-body" itemprop="text">
 							<p>Ця помилка означає, що ви намагаєтеся встановити надто об'ємний xml-модифікатор.</p>
-							<p>Кількість символів у файлі ocmod.xml не повинна перевищувати 65535.</p>
-							<p>Для вирішення помилки потрібно розбити xml-файл модифікації на кілька частин. Головне - не забути задавати кожній унікальній значенні <span class="strong">&lt;code&gt;</span>, можна додавати до поточного значення цифри 1,2,3... як ідентифікатори частини.</p>
-							<p>Ще одним способом рішення є зміни типу поля, де зберігаються модифікації, в таблиці <span class="strong">«oc_modification»</span> бази даних.</p>
+							<p>Кількість символів у файлі <span class="badge text-bg-dark">ocmod.xml</span> не повинна перевищувати 65535.</p>
+							<p>Для вирішення помилки потрібно розбити xml-файл модифікації на кілька частин. Головне - не забути задавати кожній унікальній значенні <span class="badge text-bg-dark">&lt;code&gt;</span>, можна додавати до поточного значення цифри 1,2,3... як ідентифікатори частини.</p>
+							<p>Ще одним способом рішення є зміни типу поля, де зберігаються модифікації, в таблиці <span class="badge text-bg-dark">oc_modification</span> бази даних.</p>
 							<p>Потрібно виконати наступний SQL-запит:</p>
 							<pre><code class="language-sql show-language">ALTER TABLE oc_modification CHANGE xml MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;</code></pre>
 						</div>
@@ -410,8 +429,8 @@
 							<ul>
 								<li><span class="strong">Ви не оновили кеш модифікатора.</span> Його потрібно оновлювати після редагування файлу, якщо він проходить через модифікатор. Про модифікаторів читайте у документації та на форумі.</li>
 								<li><span class="strong">Не оновлено або не вимкнено кеш TWIG.</span> Так, за замовчуванням він увімкнений, але при внесенні змін він заважає. Його потрібно або оновлювати або вимкнути.</li>
-								<li><span class="strong">Були зміни через Редактор шаблону.</span> Ось одні редагують через адмінку, інші через FTP. Скрізь написано, що краще редагувати тільки через FTP, але деяким все ж таки вдається все зламати. Тому перед тим, як редагувати через FTP, необхідно видалити всі зміни в <span class="strong">«Меню -> Дизайн -> Редактор шаблону»</span>.</li>
-								<li><span class="strong">Редагуєте не ті файли.</span> Та й таке буває. То редагують інший сайт, то інший шаблон, то забувають оновити кеш браузера натисканням CTRL+F5 , то намагаються редагувати щось у кеші модифікатора, тобто в директорії <span class="strong">«Storage»</span> і тд. Уважно вивчайте структуру. Про це є інформація у документації.</li>
+								<li><span class="strong">Були зміни через Редактор шаблону.</span> Ось одні редагують через адмінку, інші через FTP. Скрізь написано, що краще редагувати тільки через FTP, але деяким все ж таки вдається все зламати. Тому перед тим, як редагувати через FTP, необхідно видалити всі зміни в <span class="badge text-bg-primary">Меню -> Дизайн -> Редактор шаблону</span>.</li>
+								<li><span class="strong">Редагуєте не ті файли.</span> Та й таке буває. То редагують інший сайт, то інший шаблон, то забувають оновити кеш браузера натисканням <span class="badge text-bg-dark">CTRL+F5</span>, то намагаються редагувати щось у кеші модифікатора, тобто в директорії <span class="badge text-bg-warning">Storage</span> і тд. Уважно вивчайте структуру. Про це є інформація у документації.</li>
 								<li><span class="strong">Хостин із затримкою.</span> Так бувають хостери, які затримують зміни у файлах. Тобто редагуєш, а зміни застосовуються за хвилину. За хвилину можна весь сайт зламати, а винний виявляється хостер.</li>
 								<li><span class="strong">Кривий шаблон або шаблон із кешем.</span> Деякі шаблони настільки перекешовані, що починаєш редагувати, а змін немає. Виною кеш шаблону. Зазвичай це поширене у багатофункціональних шаблонах, тому уважніше вивчайте функціонал.</li>
 							</ul>
@@ -428,12 +447,16 @@
 						<div class="accordion-body" itemprop="text">
 							<ul>
 								<li>Завантажте та встановіть розширення Localcopy OCMOD;
-									<span class="buttons">
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
-									</span>
+									<div class="row-btn">
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+										<div class="col-12 col-md-4">
+											<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+										</div>
+									</div>
 								</li>
-								<li>Після встановлення цього додатка потрібно перейти до розділу <span class="strong">«Меню -> Розширення -> Модифікатори»</span> та натиснути кнопку <span class="strong">«Оновити модифікатори»</span>;</li>
+								<li>Після встановлення цього додатка потрібно перейти до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Модифікатори</span> та натиснути кнопку <span class="badge text-bg-primary">Оновити модифікатори</span>;</li>
 								<li>Тепер можна інсталювати інші модулі.</li>
 							</ul>
 						</div>
@@ -444,11 +467,24 @@
 	</article>
 	<aside class="aside__donate">
 		<div class="container">
-			<h2>Якщо хочете підтримати автора</h2>
-			<p class="text-center">Ви можете зробити це за допомогою: PayPal або Кредитною карткою</p>
-			<div class="row justify-content-center buttons">
-				<div class="col-12 col-md-6">
-					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Задонатити</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
+			<div class="row">
+				<div class="col">
+					<h3>Підтримати автора</h3>
+					<p class="text-center">Виразити свою підтримку можете через здійснення донату</p>
+					<div class="row justify-content-center buttons">
+						<div class="col-12 col-md-12">
+							<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-wallet btn-icon-right"></i><span>Задонатити</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<h3>Зворотній зв'язок</h3>
+					<p class="text-center">Маєте питання або пропозиції? Раді почути вашу думку!</p>
+					<div class="row justify-content-center buttons">
+						<div class="col-12 col-md-12">
+							<a href="mailto:corgras.dev@gmail.com" rel="nofollow" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-envelope btn-icon-right"></i><span>Написати нам</span></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

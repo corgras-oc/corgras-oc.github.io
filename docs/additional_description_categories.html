@@ -114,11 +114,6 @@
 				</a>
 			</li>
 			<li>
-				<a href="/services" class="link" data-title="Послуги">
-					<i class="ics-list"></i><span>Послуги</span>
-				</a>
-			</li>
-			<li>
 				<a href="/faq" class="link" data-title="Питання-відповідь">
 					<i class="ics-question"></i><span>Питання-відповідь</span>
 				</a>
@@ -223,7 +218,7 @@
 				<div class="accordion-item bd-callout-danger">
 					<h2 class="accordion-header" id="info1">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse1" aria-expanded="false" aria-controls="info-collapse1">
-							<i class="ics-triangle"></i><span>Важливо!</span>
+							<i class="ics-triangle"></i><span>Важлива інформація!</span>
 						</button>
 					</h2>
 					<div id="info-collapse1" class="accordion-collapse collapse" aria-labelledby="info1" data-bs-parent="#accordionInfo">
@@ -244,12 +239,12 @@
 					<div id="info-collapse2" class="accordion-collapse collapse" aria-labelledby="info2" data-bs-parent="#accordionInfo">
 						<div class="accordion-body">
 							<p>Спробуйте спочатку встановити «Localcopy OCMOD», а потім спробуйте встановити наш модифікатор знову. Ця послідовність може вирішити можливі конфлікти та допоможе вам успішно впровадити наші зміни на вашому сайті.</p>
-							<div class="row buttons">
+							<div class="row-btn">
 								<div class="col-12 col-md-4">
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
 								</div>
 								<div class="col-12 col-md-4">
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Завантажити для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
 								</div>
 							</div>
 						</div>
@@ -263,38 +258,37 @@
 			<h2><i class="ics-tool icon-h"></i>Встановлення розширення</h2>
 			<p class="chapter">Процес встановлення модифікатора складається з двох кроків:</p>
 			<ul>
-				<li><strong class="strong">«AD_Category_x_OpenCart_x.ocmod.zip»</strong> - цей архів містить основний функціонал модуля та модифікатора;</li>
-				<li><strong class="strong">«AD_Category_FrontEnd_Default_OpenCart_x.ocmod.zip»</strong> - цей архів містить модифікатор для підключення шаблону.</li>
+				<li><span class="badge text-bg-dark">AD_Category_x_OpenCart_x.ocmod.zip</span> - цей архів містить основний функціонал модуля та модифікатора;</li>
+				<li><span class="badge text-bg-dark">AD_Category_FrontEnd_Default_OpenCart_x.ocmod.zip</span> - цей архів містить модифікатор для підключення шаблону.</li>
 			</ul>
 			<p class="chapter">Щоб встановити модифікатор, виконайте наступні кроки:</p>
 			<ul>
-				<li>Увійдіть в Адмін-панель та перейдіть до розділу <strong class="strong">«Меню -> Розширення -> Встановлення розширень»</strong>;</li>
+				<li>Увійдіть в Адмін-панель та перейдіть до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Встановлення розширень</span>;</li>
 				<li>Завантажте та встановіть обидва архіви;</li>
 				<li>Після успішного завершення встановлення отримаєте повідомлення про це;</li>
-				<li>Перейдіть до розділу <strong class="strong">«Меню -> Розширення -> Модифікатори»</strong> і у правому верхньому куті натисніть кнопку «Оновити»;</li>
+				<li>Перейдіть до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Модифікатори</span> і у правому верхньому куті натисніть кнопку «Оновити»;</li>
+				<li>Після перейдіть до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Модулі</span> і встановіть модуль <span class="badge text-bg-dark">Додатковий Опис Категоріям + Налаштування</span>.</li>
 			</ul>
-			<p>Після цього перейдіть до <strong class="strong">«Меню -> Система -> Групи користувачів»</strong> і встановіть права доступу для адміністратора (в розділах «Дозволити перегляд» та «Дозволити редагувати» оберіть <strong class="strong">«extension/module/cs_ad_category»</strong>).<p>
-			<p>Завершивши ці кроки, перейдіть до розділу <strong class="strong">«Меню -> Розширення -> Модулі»</strong> і встановіть модуль <strong class="strong">«Додатковий Опис Категоріям + Налаштування»</strong>.</p>
 		</div>
 	</article>
 	<article id="setting_extension">
 		<div class="container content">
 			<h2><i class="ics-sliders-h icon-h"></i>Налаштування розширення</h2>
-			<p>Для налаштування розширення перейдіть <strong class="strong">«Меню -> Розширення -> Модулі -> Додаткове Опис Категоріям + Налаштування»</strong></p>
+			<p>Для налаштування розширення перейдіть <span class="badge text-bg-primary">Меню -> Розширення -> Модулі -> Додаткове Опис Категоріям + Налаштування</span></p>
 			<p class="chapter">Основні параметри налаштування:</p>
 			<ul>
-				<li><strong class="strong">Позиції описів</strong> - дозволяє змінювати місцями верхній та нижній опис;</li>
-				<li><strong class="strong">Статус</strong> - відповідає за активацію цього розширення.</li>
+				<li><span class="badge text-bg-dark">Позиції описів</span> - дозволяє змінювати місцями верхній та нижній опис;</li>
+				<li><span class="badge text-bg-dark">Статус</span> - відповідає за активацію цього розширення.</li>
 			</ul>
 			<p class="chapter">Додаткові параметри налаштування верхнього та нижнього опису:</p>
 			<ul>
-				<li><strong class="strong">Статус опису</strong> - відображення блоку з описом на сайті;</li>
-				<li><strong class="strong">Статус зображення</strong> - відображає зображення категорії поруч із текстом;</li>
-				<li><strong class="strong">Позиція зображення</strong> - визначає, з якого боку тексту розташовувати зображення;</li>
-				<li><strong class="strong">Опис на сторінках пагінації</strong> - налаштовує відображення тексту на першій сторінці чи на всіх;</li>
-				<li><strong class="strong">Статус кнопки «Детальніше»</strong> - дозволяє включити або вимкнути скрипт для всіх описів категорій;</li>
-				<li><strong class="strong">Висота видимого тексту</strong> - регулює кількість видимого тексту, а іншу частину приховує;</li>
-				<li><strong class="strong">Розширення екрану</strong> - налаштовує роздільні здатності екрану, на яких цей скрипт працюватиме.</li>
+				<li><span class="badge text-bg-dark">Статус опису</span> - відображення блоку з описом на сайті;</li>
+				<li><span class="badge text-bg-dark">Статус зображення</span> - відображає зображення категорії поруч із текстом;</li>
+				<li><span class="badge text-bg-dark">Позиція зображення</span> - визначає, з якого боку тексту розташовувати зображення;</li>
+				<li><span class="badge text-bg-dark">Опис на сторінках пагінації</span> - налаштовує відображення тексту на першій сторінці чи на всіх;</li>
+				<li><span class="badge text-bg-dark">Статус кнопки «Детальніше»</span> - дозволяє включити або вимкнути скрипт для всіх описів категорій;</li>
+				<li><span class="badge text-bg-dark">Висота видимого тексту</span> - регулює кількість видимого тексту, а іншу частину приховує;</li>
+				<li><span class="badge text-bg-dark">Розширення екрану</span> - налаштовує роздільні здатності екрану, на яких цей скрипт працюватиме.</li>
 			</ul>
 			<p class="chapter">Статус БД:</p>
 			<ul>
@@ -306,11 +300,11 @@
 	<article class="article__grey" id="settings">
 		<div class="container content">
 			<h2><i class="ics-sliders-v icon-h"></i>Налаштування у категоріях</h2>
-			<p>Щоб налаштувати розширення для конкретного товару, перейдіть в розділ <strong class="strong">«Меню -> Каталог -> Категорії»</strong> і оберіть потрібну категорію. Додаткові параметри знаходяться у вкладці <strong class="strong">«Дизайн»</strong></p>
+			<p>Щоб налаштувати розширення для конкретного товару, перейдіть в розділ <span class="badge text-bg-primary">Меню -> Каталог -> Категорії</span> і оберіть потрібну категорію. Додаткові параметри знаходяться у вкладці <span class="badge text-bg-warning">Дизайн</span></p>
 			<p class="chapter">Тут ви можете налаштувати наступні параметри:</p>
 			<ul>
-				<li><strong class="strong">Статус кнопки «Детальніше»</strong> - увімкніть або вимкніть скрипт для конкретної категорії, або залиште за замовчуванням, тоді будуть застосовуватися налаштування з модуля;</li>
-				<li><strong class="strong">Висота видимого тексту</strong> - визначте кількість тексту, який буде видимим, інша частина тексту буде прихована.</li>
+				<li><span class="badge text-bg-dark">Статус кнопки «Детальніше»</span> - увімкніть або вимкніть скрипт для конкретної категорії, або залиште за замовчуванням, тоді будуть застосовуватися налаштування з модуля;</li>
+				<li><span class="badge text-bg-dark">Висота видимого тексту</span> - визначте кількість тексту, який буде видимим, інша частина тексту буде прихована.</li>
 			</ul>
 			<p>Ці налаштування допоможуть вам налаштувати розширення для конкретних категорій товарів у вашому каталозі.</p>
 		</div>
@@ -318,17 +312,18 @@
 	<article id="stylization">
 		<div class="container content">
 			<h2><i class="ics-palette icon-h"></i>Стилізація</h2>
-			<p>Ви можете змінювати верстку блоків з описом, редагуючи файли, які розташовані за такими шляхами:</p>
+			<p>Ви можете змінювати верстку блоків з описом, редагуючи файли, які розташовані за такими шляхами</p>
 			<section class="mt-5">
-				<p>Верхній блок опису:<p>
+				<p class="chapter">Верхній блок опису:<p>
 				<pre><code class="language-http show-language">/catalog/view/theme/default/template/custom_templates/addons/ad_category_top.(twig/tpl)</code></pre>
 			</section>
 			<section class="mt-5">			
-				<p>Нижній блок опису:<p>
+				<p class="chapter">Нижній блок опису:<p>
 				<pre><code class="language-http show-language">/catalog/view/theme/default/template/custom_templates/addons/ad_category_bottom.(twig/tpl)</code></pre>
 			</section>
 			<section class="mt-5">	
-				<p>Якщо стандартний дизайн кнопки «Розгорнути / Згорнути» не відповідає вашому сайту, ви можете змінити CSS стилі в файлі <strong class="strong">«cs_ad_category.min.css»</strong>, який розташований за таким шляхом:</p>
+				<p class="chapter">CSS-стилізація:</p>
+				<p>Якщо стандартний дизайн кнопки «Розгорнути / Згорнути» не відповідає вашому сайту, ви можете змінити CSS стилі в файлі <span class="badge text-bg-warning">cs_ad_category.min.css</span>, який розташований за таким шляхом:</p>
 				<pre><code class="language-http show-language">/catalog/view/javascript/cs_libs/css/cs_readmore.min.css</code></pre>
 			</section>	
 		</div>
@@ -339,7 +334,7 @@
 			<p class="text-center">Якщо виникли питання або проблеми, то ми зібрали в даному розділі відповіді на питання, що часто ставляться, вирішення найбільш загальних і часто зустрічаються проблем.</p>
 			<div class="row justify-content-center buttons">
 				<div class="col-12 col-md-6">
-					<a href="/faq" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Ознайомитись</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
+					<a href="/faq" target="_blank" class="btn btn-dark btn-default-2"><span>Ознайомитись</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
 				</div>
 			</div>
 		</div>
@@ -458,11 +453,24 @@
 	</article>
 	<aside class="aside__donate">
 		<div class="container">
-			<h2>Якщо хочете підтримати автора</h2>
-			<p class="text-center">Ви можете зробити це за допомогою: PayPal або Кредитною карткою</p>
-			<div class="row justify-content-center buttons">
-				<div class="col-12 col-md-6">
-					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Задонатити</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
+			<div class="row">
+				<div class="col">
+					<h3>Підтримати автора</h3>
+					<p class="text-center">Виразити свою підтримку можете через здійснення донату</p>
+					<div class="row justify-content-center buttons">
+						<div class="col-12 col-md-12">
+							<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-wallet btn-icon-right"></i><span>Задонатити</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<h3>Зворотній зв'язок</h3>
+					<p class="text-center">Маєте питання або пропозиції? Раді почути вашу думку!</p>
+					<div class="row justify-content-center buttons">
+						<div class="col-12 col-md-12">
+							<a href="mailto:corgras.dev@gmail.com" rel="nofollow" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-envelope btn-icon-right"></i><span>Написати нам</span></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
