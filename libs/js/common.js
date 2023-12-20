@@ -1,34 +1,3 @@
-// Создаем элемент горизонтальной полоски индикатора прокрутки
-    const scrollIndicator = document.createElement('div');
-    scrollIndicator.id = 'scroll-indicator';
-    scrollIndicator.style.position = 'fixed';
-    scrollIndicator.style.top = '0';
-    scrollIndicator.style.left = '0';
-    scrollIndicator.style.width = '0%';
-    scrollIndicator.style.height = '2px';
-    scrollIndicator.style.backgroundColor = '#FDDD34';
-    scrollIndicator.style.transition = 'width 0.3s';
-    scrollIndicator.style.zIndex = '9999';
-    
-    // Добавляем индикатор на страницу
-    document.body.appendChild(scrollIndicator);
-
-    // Показываем индикатор при прокрутке страницы
-    window.addEventListener('scroll', () => {
-      const scrollPosition = window.scrollY;
-      const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercentage = (scrollPosition / documentHeight) * 100;
-      
-      scrollIndicator.style.width = scrollPercentage + '%';
-
-      if (scrollPercentage > 5) {
-        scrollIndicator.style.display = 'block';
-      } else {
-        scrollIndicator.style.display = 'none';
-      }
-    });
-
-
 var menu_btn = document.querySelector(".nav-hamburger__btn");
 
 menu_btn.onclick = function(e) {

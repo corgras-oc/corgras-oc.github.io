@@ -19,14 +19,39 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-	display: inline-block;
-  text-rendering: auto; 
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ics-chrome:before {
+  content: "\e93a";
+}
+.ics-safari:before {
+  content: "\e93c";
+}
+.ics-terminal:before {
+  content: "\e938";
+}
+.ics-moon:before {
+  content: "\e932";
+}
+.ics-sun:before {
+  content: "\e933";
+}
+.ics-arrow-square:before {
+  content: "\e92a";
+}
+.ics-seo:before {
+  content: "\e92b";
+}
+.ics-adaptive:before {
+  content: "\e92c";
+}
+.ics-wallet:before {
+  content: "\e92d";
+}
 .ics-demo:before {
   content: "\e923";
 }
