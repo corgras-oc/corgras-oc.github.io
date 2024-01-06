@@ -6,7 +6,7 @@
 	<!--<base href="https://corgras.github.io/">-->
 
 	<title>Документация по расширению «JS Readmore для описания товара» для Opencart и ocStore</title>
-	<meta name="description" content="Позволяет скрывать часть длинного текста на странице товара и предоставляет пользователям возможность разворачивать и скрывать описание товара по мере необходимости. Этот модификатор обеспечивает более гибкий и удобный способ представления информации на страницах товаров вашего интернет-магазина на Opencart / ocStore.">
+	<meta name="description" content="Документация по настройке и использованию модификации для улучшения интернет-магазина на Opencart / ocStore. Реализуйте функцию скрытия части длинного текста на странице товара, предоставляя пользователям возможность удобного разворачивания и скрытия описания товара по их потребности">
 
 	<link rel="icon" type="image/svg+xml" href="/libs/images/logo/favicon.svg?v=2">
 	<link rel="shortcut alternate icon" type="image/png" href="/libs/images/logo/favicon.png?v=2">
@@ -41,7 +41,7 @@
 				"url": "https://corgras.github.io/ru/",
 				"name": "RoS"
 			},
-			"description": "Позволяет скрывать часть длинного текста на странице товара и предоставляет пользователям возможность разворачивать и скрывать описание товара по мере необходимости. Этот модификатор обеспечивает более гибкий и удобный способ представления информации на страницах товаров вашего интернет-магазина на Opencart / ocStore.",
+			"description": "Документация по настройке и использованию модификации для улучшения интернет-магазина на Opencart / ocStore. Реализуйте функцию скрытия части длинного текста на странице товара, предоставляя пользователям возможность удобного разворачивания и скрытия описания товара по их потребности",
 			"publisher": {
 				"@type": "Organization",
 				"name": "CORGRAS OpenCart"
@@ -114,11 +114,6 @@
 				</a>
 			</li>
 			<li>
-				<a href="/ru/services" class="link" data-title="Услуги">
-					<i class="ics-list"></i><span>Услуги</span>
-				</a>
-			</li>
-			<li>
 				<a href="/ru/faq" class="link" data-title="Вопрос-ответ">
 					<i class="ics-question"></i><span>Вопрос-ответ</span>
 				</a>
@@ -185,13 +180,13 @@
 				<div class="col-6 col-md-4">
 					<a href="#installer">
 						<i class="ics-tool"></i>
-						<span>2. Установка расширения</span>
+						<span>2. Установка модификатора</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
 					<a href="#setting_extension">
 						<i class="ics-sliders-h"></i>
-						<span>3. Настройка расширения</span>
+						<span>3. Настройка модификатора</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
@@ -223,7 +218,7 @@
 				<div class="accordion-item bd-callout-danger">
 					<h2 class="accordion-header" id="info1">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info-collapse1" aria-expanded="false" aria-controls="info-collapse1">
-							<i class="ics-triangle"></i><span>Важно!</span>
+							<i class="ics-triangle"></i><span>Важная информация!</span>
 						</button>
 					</h2>
 					<div id="info-collapse1" class="accordion-collapse collapse" aria-labelledby="info1" data-bs-parent="#accordionInfo">
@@ -244,12 +239,12 @@
 					<div id="info-collapse2" class="accordion-collapse collapse" aria-labelledby="info2" data-bs-parent="#accordionInfo">
 						<div class="accordion-body">
 							<p>Попробуйте сначала установить «Localcopy OCMOD», а затем попробуйте установить наш модификатор снова. Эта последовательность может разрешить возможные конфликты и поможет вам успешно внедрить наши изменения на вашем сайте.</p>
-							<div class="row buttons">
+							<div class="row-btn">
 								<div class="col-12 col-md-4">
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Загрузить для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart2x/releases" target="_blank" class="btn btn-dark btn-small"><span>Загрузить для OpenCart 2x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
 								</div>
 								<div class="col-12 col-md-4">
-									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small btn-sm"><span>Загрузить для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
+									<a href="https://github.com/corgras-oc/Fix_LocalCopy_Opencart3x/releases" target="_blank" class="btn btn-dark btn-small"><span>Загрузить для OpenCart 3x</span><i class="ics-arrow-down-line btn-icon-left"></i></a>
 								</div>
 							</div>
 						</div>
@@ -260,27 +255,26 @@
 	</article>
 	<article class="article__grey" id="installer">
 		<div class="container content">
-			<h2><i class="ics-tool icon-h"></i>Установка расширения</h2>
+			<h2><i class="ics-tool icon-h"></i>Установка модификатора</h2>
 			<p class="chapter">Чтобы установить модификатор, выполните следующие шаги:</p>
 			<ul>
-				<li>Войдите в Админ-панель и перейдите в раздел <strong class="strong">«Меню -> Расширения -> Установка расширений»</strong>;</li>
-				<li>Загрузите и установите архивный файл <strong class="strong">«PD_Readmore_x_OpenCart_x.ocmod.zip»</strong>;</li>
-				<li>После успешной установки перейдите в раздел <strong class="strong">«Меню -> Расширения -> Модификаторы»</strong> и в правом верхнем углу нажмите кнопку «Обновить».</li>
+				<li>Войдите в Админ-панель и перейдите в раздел <span class="badge text-bg-primary">Меню -> Расширения -> Установка расширений</span>;</li>
+				<li>Загрузите и установите архивный файл <span class="badge text-bg-dark">PD_Readmore_x_OpenCart_x.ocmod.zip</span>;</li>
+				<li>После успешной установки перейдите в раздел <span class="badge text-bg-primary">Меню -> Расширения -> Модификаторы</span> и в правом верхнем углу нажмите кнопку «Обновить»;</li>
+				<li>Завершив эти шаги, перейдите в раздел <span class="badge text-bg-primary">Меню -> Расширения -> Модули</span> и установите модуль <span class="badge text-bg-dark">JS Readmore Для Описания Товара</span>.</li>
 			</ul>
-			<p>Затем перейдите в раздел <strong class="strong">«Меню -> Система -> Группы пользователей»</strong> и установите права доступа для администратора (в разделах «Разрешить просмотр» и «Разрешить редактирование» выберите <strong class="strong">«extension/module/cs_pd_readmore»</strong>).</p>
-			<p>Завершив эти шаги, перейдите в раздел <strong class="strong">«Меню -> Расширения -> Модули»</strong> и установите модуль <strong class="strong">«JS Readmore Для Описания Товара»</strong>.</p>
 		</div>
 	</article>
 	<article id="setting_extension">
 		<div class="container content">
-			<h2><i class="ics-sliders-h icon-h"></i>Настройка расширения</h2>
-			<p>Для настройки расширения перейдите в раздел <strong class="strong">«Меню -> Расширения -> Модули -> JS Readmore Для Описания Товара»</strong></p>
+			<h2><i class="ics-sliders-h icon-h"></i>Настройка модификатора</h2>
+			<p>Для настройки модификатора перейдите в раздел <span class="badge text-bg-primary">Меню -> Расширения -> Модули -> JS Readmore Для Описания Товара</span></p>
 			<p class="chapter">Основные параметры настройки:</p>
 			<ul>
-				<li><strong class="strong">Статус</strong> - отвечает за активацию данного расширения;</li>
-				<li><strong class="strong">Статус JavaScript для всех товаров</strong> - позволяет включить или выключить скрипт для всех описаний товаров;</li>
-				<li><strong class="strong">Высота при свернутом состоянии</strong> - регулирует количество видимого текста, а остальную часть скрывает;</li>
-				<li><strong class="strong">Разрешение экрана</strong> - настраивает разрешения экрана, на которых этот скрипт будет работать.</li>
+				<li><span class="badge text-bg-dark">Статус</span> - отвечает за активацию данного модификатора;</li>
+				<li><span class="badge text-bg-dark">Статус JavaScript для всех товаров</span> - позволяет включить или выключить скрипт для всех описаний товаров;</li>
+				<li><span class="badge text-bg-dark">Высота при свернутом состоянии</span> - регулирует количество видимого текста, а остальную часть скрывает;</li>
+				<li><span class="badge text-bg-dark">Разрешение экрана</span> - настраивает разрешения экрана, на которых этот скрипт будет работать.</li>
 			</ul>
 			<p class="chapter">Статус БД:</p>
 			<ul>
@@ -292,11 +286,11 @@
 	<article class="article__grey" id="settings">
 		<div class="container content">
 			<h2><i class="ics-sliders-v icon-h"></i>Настройки в товарах</h2>
-			<p>Чтобы настроить расширение для конкретного товара, перейдите в раздел <strong class="strong">«Меню -> Каталог -> Товары»</strong> и выберите нужный товар. Дополнительные параметры находятся во вкладке <strong class="strong">«Дизайн»</strong></p>
+			<p>Чтобы настроить расширение для конкретного товара, перейдите в раздел <span class="badge text-bg-primary">Меню -> Каталог -> Товары</span> и выберите нужный товар. Дополнительные параметры находятся во вкладке <span class="badge text-bg-warning">Дизайн</span></p>
 			<p class="chapter">Здесь вы можете настроить следующие параметры:</p>
 			<ul>
-				<li><strong class="strong">Статус JavaScript для товара</strong> - включите или выключите скрипт для конкретного товара, или оставьте по умолчанию, тогда будут применяться настройки из модуля;</li>
-				<li><strong class="strong">Высота при свернутом состоянии</strong> - определите количество текста, который будет видимым, а остальная часть текста будет скрыта.</li>
+				<li><span class="badge text-bg-dark">Статус JavaScript для товара</span> - включите или выключите скрипт для конкретного товара, или оставьте по умолчанию, тогда будут применяться настройки из модуля;</li>
+				<li><span class="badge text-bg-dark">Высота при свернутом состоянии</span> - определите количество текста, который будет видимым, а остальная часть текста будет скрыта.</li>
 			</ul>
 			<p>Эти настройки помогут вам настроить расширение для конкретных товаров.</p>
 		</div>
@@ -304,7 +298,7 @@
 	<article id="stylization">
 		<div class="container content">
 			<h2><i class="ics-palette icon-h"></i>Стилизация</h2>
-			<p>Если стандартный дизайн кнопки «Развернуть / Свернуть» не соответствует вашему сайту, вы можете изменить CSS-стили в файле <strong class="strong">«cs_readmore.min.css»</strong>, который находится по следующему пути:</p>
+			<p>Если стандартный дизайн кнопки «Развернуть / Свернуть» не соответствует вашему сайту, вы можете изменить CSS-стили в файле <span class="badge text-bg-warning">cs_readmore.min.css</span>, который находится по следующему пути:</p>
 			<pre><code class="language-http show-language">/catalog/view/javascript/cs_libs/css/cs_readmore.min.css</code></pre>
 		</div>
 	</article>
@@ -314,7 +308,7 @@
 			<p class="text-center">Если возникли вопросы или проблемы, то мы собрали в данном разделе ответы на часто задаваемые вопросы, решения наиболее общих и часто встречающихся проблем.</p>
 			<div class="row justify-content-center buttons">
 				<div class="col-12 col-md-6">
-					<a href="/faq" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Ознакомиться</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
+					<a href="/faq" target="_blank" class="btn btn-dark btn-default-2"><span>Ознакомиться</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
 				</div>
 			</div>
 		</div>
@@ -393,11 +387,16 @@
 	</article>
 	<aside class="aside__donate">
 		<div class="container">
-			<h2>Если хотите поддержать автора</h2>
-			<p class="text-center">Вы можете сделать это с помощью: PayPal или Кредитной картой</p>
 			<div class="row justify-content-center buttons">
 				<div class="col-12 col-md-6">
-					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default btn-xl"><span>Задонатить</span><i class="ics-arrow-right-long btn-icon-left"></i></a>
+					<h3>Поддержать автора</h3>
+					<p class="text-center">Выразить свою поддержку можете через осуществление доната</p>
+					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-wallet btn-icon-right"></i><span>Задонатить</span></a>
+				</div>
+				<div class="col-12 col-md-6">
+					<h3>Обратная связь</h3>
+					<p class="text-center">У вас есть вопросы или предложения? Рады услышать ваше мнение!</p>
+					<a href="mailto:corgras.dev@gmail.com" rel="nofollow" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-envelope btn-icon-right"></i><span>Написать нам</span></a>
 				</div>
 			</div>
 		</div>
