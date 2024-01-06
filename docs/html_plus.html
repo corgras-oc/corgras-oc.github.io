@@ -254,7 +254,7 @@
 				<li><span class="badge text-bg-dark">Статус</span> - відповідає за увімкнення модуля;</li>
 				<li><span class="badge text-bg-dark">Зображення</span> - вставка зображень для різних розмірів екранів або одного для всіх;</li>
 				<li><span class="badge text-bg-dark">Відео список</span> - вибір, звідки буде вставлено відео;</li>
-				<li><span class="badge text-bg-dark">Посилання на відео</span> - для сервісів, що підтримуються, достатньо вставити будь-яке посилання на відео, для інших - скопіювати посилання з <strong class="strong">«iframe src=""»</strong>.</li>
+				<li><span class="badge text-bg-dark">Посилання на відео</span> - для сервісів, що підтримуються, достатньо вставити будь-яке посилання на відео, для інших - скопіювати посилання з <span class="badge text-bg-warning">iframe src=""</span>.</li>
 			</ul>
 			<p class="chapter">Додаткові параметри налаштування:</p>
 			<ul>
@@ -285,7 +285,7 @@
 		<div class="container content">
 			<h2><i class="ics-palette icon-h"></i>Стилізація</h2>
 			<section>
-				<p class="chapter">Шаблоны:</p>
+				<p class="chapter">Шаблони:</p>
 				<p>Для налаштування вигляду блоків з описом, cтворіть власний шаблон для вашого модуля та розмістіть його в папці:</p>
 				<pre><code class="language-http show-language">catalog/view/theme/default/template/custom_templates/module/html_content_plus/ім'я_файлу_латинськими_літерами.twig.tpl</code></pre>
 			</section>
@@ -439,24 +439,16 @@
 	</article>
 	<aside class="aside__donate">
 		<div class="container">
-			<div class="row">
-				<div class="col">
+			<div class="row justify-content-center buttons">
+				<div class="col-12 col-md-6">
 					<h3>Підтримати автора</h3>
-					<p class="text-center">Виразити свою підтримку можете через здійснення донату</p>
-					<div class="row justify-content-center buttons">
-						<div class="col-12 col-md-12">
-							<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-wallet btn-icon-right"></i><span>Задонатити</span></a>
-						</div>
-					</div>
+					<p>Виразити свою підтримку можете через здійснення донату</p>
+					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-wallet btn-icon-right"></i><span>Задонатити</span></a>
 				</div>
-				<div class="col">
+				<div class="col-12 col-md-6">
 					<h3>Зворотній зв'язок</h3>
-					<p class="text-center">Маєте питання або пропозиції? Раді почути вашу думку!</p>
-					<div class="row justify-content-center buttons">
-						<div class="col-12 col-md-12">
-							<a href="mailto:corgras.dev@gmail.com" rel="nofollow" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-envelope btn-icon-right"></i><span>Написати нам</span></a>
-						</div>
-					</div>
+					<p>Маєте питання або пропозиції? Раді почути вашу думку!</p>
+					<a href="mailto:corgras.dev@gmail.com" rel="nofollow" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-envelope btn-icon-right"></i><span>Написати нам</span></a>
 				</div>
 			</div>
 		</div>

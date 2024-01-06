@@ -5,8 +5,8 @@
 	<meta name="robots" content="index, follow">
 	<!--<base href="https://corgras.github.io/">-->
 
-	<title>Документація розширення «Одиниці виміру товару» для Opencart та ocStore</title>
-	<meta name="description" content="Розширення для Opencart і ocStore, яке дозволяє додавати та налаштовувати різні одиниці виміру цін для товарів та опцій. Підійде, якщо ви продаєте товар, ціна на який встановлюється за певну кількість, тобто ціна за квадратний метр, погонний метр, кубічний метр, кілограм, штуку і т.д.">
+	<title>Документація «Одиниці виміру товару» для Opencart та ocStore</title>
+	<meta name="description" content="Документація з налаштування та використання модифікації для покращення інтернет-магазину на Opencart / ocStore. Надає можливість додавати та налаштовувати різні одиниці виміру цін для товарів та опцій, ідеально підходить для продажу товарів з ціною за певну кількість, таку як ціна за квадратний метр, погонний метр, кубічний метр, кілограм, штуку і т.д.">
 
 	<link rel="icon" type="image/svg+xml" href="/libs/images/logo/favicon.svg?v=2">
 	<link rel="shortcut alternate icon" type="image/png" href="/libs/images/logo/favicon.png?v=2">
@@ -31,9 +31,9 @@
 		{
 			"@context": "https://schema.org",
 			"@type": "Article",
-			"headline": "Документація розширення «Одиниці виміру товару»",
-			"datePublished": "2023-11-20",
-			"dateModified": "2023-11-20",
+			"headline": "Документація «Одиниці виміру товару»",
+			"datePublished": "2024-01-01",
+			"dateModified": "2024-01-01",
 			"url": "https://corgras-oc.github.io/docs/unit",
 			"inLanguage": "uk",
 			"author": {
@@ -41,7 +41,7 @@
 				"url": "https://corgras.github.io/",
 				"name": "RoS"
 			},
-			"description": "Розширення для Opencart і ocStore, яке дозволяє додавати та налаштовувати різні одиниці виміру цін для товарів та опцій. Підійде, якщо ви продаєте товар, ціна на який встановлюється за певну кількість, тобто ціна за квадратний метр, погонний метр, кубічний метр, кілограм, штуку і т.д.",
+			"description": "Документація з налаштування та використання модифікації для покращення інтернет-магазину на Opencart / ocStore. Надає можливість додавати та налаштовувати різні одиниці виміру цін для товарів та опцій, ідеально підходить для продажу товарів з ціною за певну кількість, таку як ціна за квадратний метр, погонний метр, кубічний метр, кілограм, штуку і т.д.",
 			"publisher": {
 				"@type": "Organization",
 				"name": "CORGRAS OpenCart"
@@ -156,7 +156,7 @@
 			<div class="card documentation__card">
 				<div class="col__card"><i class="ics-code-branch"></i>Версія: 1.0</div>
 				<div class="col__card"><i class="ics-opencart"></i>OpenCart: 3.x</div>
-				<div class="col__card"><i class="ics-history"></i>Реліз: 20.11.2023</div>
+				<div class="col__card"><i class="ics-history"></i>Реліз: 01.01.2024</div>
 			</div>
 		</div>
 		<div class="page-nav">
@@ -180,19 +180,19 @@
 				<div class="col-6 col-md-4">
 					<a href="#installer">
 						<i class="ics-tool"></i>
-						<span>2. Встановлення розширення</span>
-					</a>
-				</div>
-				<div class="col-6 col-md-4">
-					<a href="#setting_extension">
-						<i class="ics-sliders-h"></i>
-						<span>3. Налаштування розширення</span>
+						<span>2. Встановлення модифікатора</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
 					<a href="#settings">
+						<i class="ics-sliders-h"></i>
+						<span>3. Додавання одиниці виміру</span>
+					</a>
+				</div>
+				<div class="col-6 col-md-4">
+					<a href="#setting_extension">
 						<i class="ics-sliders-v"></i>
-						<span>4. Налаштування у категоріях</span>
+						<span>4. Налаштування модифікатора</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
@@ -255,7 +255,7 @@
 	</article>
 	<article class="article__grey" id="installer">
 		<div class="container content">
-			<h2><i class="ics-tool icon-h"></i>Встановлення розширення</h2>
+			<h2><i class="ics-tool icon-h"></i>Встановлення модифікатора</h2>
 			<p class="chapter">Процес встановлення модифікатора складається з двох кроків:</p>
 			<ul>
 				<li><span class="badge text-bg-dark">Unit_Of_Measurement_Product_x_OpenCart_x.ocmod.zip</span> - цей архів містить основний функціонал модуля та модифікатора;</li>
@@ -267,13 +267,13 @@
 				<li>Завантажте та встановіть обидва архіви;</li>
 				<li>Після успішного завершення встановлення отримаєте повідомлення про це;</li>
 				<li>Перейдіть до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Модифікатори</span> і у правому верхньому куті натисніть кнопку «Оновити»;</li>
-				<li>Після перейдіть до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Модулі</span> і встановіть модуль <span class="badge text-bg-dark">Одиниці виміру товару</span>.</li>
+				<li>Завершивши ці кроки, перейдіть до розділу <span class="badge text-bg-primary">Меню -> Розширення -> Модулі</span> і встановіть модуль <span class="badge text-bg-dark">Одиниці виміру товару</span>.</li>
 			</ul>
 		</div>
 	</article>
 	<article id="settings">
 		<div class="container content">
-			<h2><i class="ics-sliders-v icon-h"></i>Додавання одиниці виміру</h2>
+			<h2><i class="ics-sliders-h icon-h"></i>Додавання одиниці виміру</h2>
 			<p>Щоб додати одиницю виміру, перейдіть в розділ <span class="badge text-bg-primary">Меню -> Система -> Локалізація -> Одиниця виміру товару</span>, та натисніть кнопку «Додати». Відкриється вікно, в якому заповніть поля;</p>
 			<p class="chapter">Поля форми:</p>
 			<ul>
@@ -287,11 +287,11 @@
 	</article>
 	<article class="article__grey" id="setting_extension">
 		<div class="container content">
-			<h2><i class="ics-sliders-h icon-h"></i>Налаштування розширення</h2>
-			<p>Для налаштування розширення перейдіть <span class="badge text-bg-primary">Меню -> Розширення -> Модулі -> Одиниці виміру товару</span></p>
+			<h2><i class="ics-sliders-v icon-h"></i>Налаштування модифікатора</h2>
+			<p>Для налаштування модифікатора перейдіть <span class="badge text-bg-primary">Меню -> Розширення -> Модулі -> Одиниці виміру товару</span></p>
 			<p class="chapter">Основні параметри налаштування:</p>
 			<ul>
-				<li><span class="badge text-bg-dark">Статус</span> - відповідає за увімкнення розширення;</li>
+				<li><span class="badge text-bg-dark">Статус</span> - відповідає за увімкнення модифікатора;</li>
 				<li><span class="badge text-bg-dark">Роздільник</span> - дозволяє вивести символ, який буде між ціною та одиницею виміру [Приклад: 10.00 / шт. | 10.00 за м.кв.];</li>
 				<li><span class="badge text-bg-dark">Відображення в опціях</span> - дозволяє відображення поруч з ціною в розділі з опціями;</li>
 				<li><span class="badge text-bg-dark">Автозаміна од. вимірювання</span> - дозволяє автозаміну одиниці вимірювання поруч з ціною при виборі опції;</li>
@@ -335,7 +335,7 @@
 					<div class="block">
 						<div class="tags">
 							<h5 class="title release">
-								<span class="version">v1.0</span><span class="date">20.11.2023</span>
+								<span class="version">v1.0</span><span class="date">01.01.2024</span>
 							</h5>
 							<p class="tag"><span>Останній реліз</span></p>
 						</div>
@@ -355,24 +355,16 @@
 	</article>
 	<aside class="aside__donate">
 		<div class="container">
-			<div class="row">
-				<div class="col">
+			<div class="row justify-content-center buttons">
+				<div class="col-12 col-md-6">
 					<h3>Підтримати автора</h3>
-					<p class="text-center">Виразити свою підтримку можете через здійснення донату</p>
-					<div class="row justify-content-center buttons">
-						<div class="col-12 col-md-12">
-							<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-wallet btn-icon-right"></i><span>Задонатити</span></a>
-						</div>
-					</div>
+					<p>Виразити свою підтримку можете через здійснення донату</p>
+					<a href="https://www.paypal.com/donate/?hosted_button_id=DMETJT5YE55HN" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-wallet btn-icon-right"></i><span>Задонатити</span></a>
 				</div>
-				<div class="col">
+				<div class="col-12 col-md-6">
 					<h3>Зворотній зв'язок</h3>
-					<p class="text-center">Маєте питання або пропозиції? Раді почути вашу думку!</p>
-					<div class="row justify-content-center buttons">
-						<div class="col-12 col-md-12">
-							<a href="mailto:corgras.dev@gmail.com" rel="nofollow" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-envelope btn-icon-right"></i><span>Написати нам</span></a>
-						</div>
-					</div>
+					<p>Маєте питання або пропозиції? Раді почути вашу думку!</p>
+					<a href="mailto:corgras.dev@gmail.com" rel="nofollow" target="_blank" class="btn btn-dark btn-default-2"><i class="ics-envelope btn-icon-right"></i><span>Написати нам</span></a>
 				</div>
 			</div>
 		</div>
