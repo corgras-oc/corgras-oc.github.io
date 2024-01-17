@@ -203,7 +203,11 @@ a:not([href]):not([tabindex]):hover,
     flex-wrap: wrap;
 	gap: 3rem;
 }
-
+.badge{
+	font-weight: 400;
+    padding: 6px 10px;
+    font-size: 1.3rem;
+}
 /* -- ALERT -- */
 .danger {
 	color: var(--bs-danger);
@@ -254,8 +258,21 @@ p + .buttons {
 .buttons > div{
 	display: flex;
 	justify-content: center;
-	flex-wrap:wrap
+	flex-wrap:wrap;
+	align-items:center
 }
+
+
+#version{order:1}
+#release{order:3}
+#buy{order:2}
+.info-cards i{
+	margin-right: 1rem;
+	font-size: 1.8rem;
+	font-weight: normal;
+}
+
+
 
 .btn {
 	border-radius: var(--button-border-radius);
@@ -921,24 +938,6 @@ footer .footer__copyrights {
 	margin: 1rem auto;
 	height: 2px;
 	background: var(--color-blue);
-}
-
-/* -- DOCUMENTATION CARD -- */
-.documentation__card {
-	padding: 1.5rem 2rem;
-	margin: 3rem 0 0;
-	text-align: center;
-	font-weight: 300;
-	display: flex;
-	flex-direction: row;
-}
-.documentation__card .col__card {
-	width: calc(100% / 3);
-}
-.documentation__card i{
-	margin-right: 1rem;
-	font-size: 1.8rem;
-	font-weight: normal;
 }
 
 /* -- PAGE NAV -- */
