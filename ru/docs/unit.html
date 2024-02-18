@@ -32,8 +32,8 @@
 			"@context": "https://schema.org",
 			"@type": "Article",
 			"headline": "Документация «Единицы измерения товара»",
-			"datePublished": "2024-01-20",
-			"dateModified": "2024-01-20",
+			"datePublished": "2024-02-18",
+			"dateModified": "2024-02-18",
 			"url": "https://corgras-oc.github.io/ru/docs/unit",
 			"inLanguage": "ru",
 			"author": {
@@ -159,7 +159,7 @@
 					<i class="ics-code-branch"></i>Версия: 1.0
 				</div>
 				<div class="col-12 col-md-3" id="release">
-					<i class="ics-history"></i>Релиз: 20.01.2024
+					<i class="ics-history"></i>Релиз: 18.02.2024
 				</div>
 				<div class="col-12 col-md-6" id="buy">
 					<div class="btn-dropdown dropdown-center">
@@ -203,15 +203,15 @@
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
-					<a href="#settings">
-						<i class="ics-sliders-h"></i>
-						<span>3. Добавление единицы измерения</span>
+					<a href="#setting_extension">
+						<i class="ics-sliders-v"></i>
+						<span>3. Настройка модификатора</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
-					<a href="#setting_extension">
-						<i class="ics-sliders-v"></i>
-						<span>4. Настройка модификатора</span>
+					<a href="#settings">
+						<i class="ics-sliders-h"></i>
+						<span>4. Добавление единицы измерения</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
@@ -290,7 +290,25 @@
 			</ul>
 		</div>
 	</article>
-	<article id="settings">
+	<article id="setting_extension">
+		<div class="container content">
+			<h2><i class="ics-sliders-v icon-h"></i>Настройка модификатора</h2>
+			<p>Для настройки модификатора перейдите <span class="badge text-bg-primary">Меню -> Расширения -> Модули -> Единицы измерения товара</span></p>
+			<p class="chapter">Основные параметры настройки:</p>
+			<ul>
+				<li><span class="badge text-bg-dark">Статус</span> - отвечает за включение модификатора;</li>
+				<li><span class="badge text-bg-dark">Разделитель</span> - позволяет вывести символ, который будет между ценой и единицей измерения [Пример: 10.00 / шт. | 10.00 за м.кв.];</li>
+				<li><span class="badge text-bg-dark">Отображение в опциях</span> - позволяет отображение рядом с ценой в разделе с опциями;</li>
+				<li><span class="badge text-bg-dark">Отображение в списке товаров (Admin)</span> - отображает колонку с единицей измерения в админ-панели на странице списка товаров + сортировка единицы измерения.</li>
+			</ul>
+			<p class="chapter">Статус БД:</p>
+			<ul>
+				<li>Отображение статуса полей в таблице БД;</li>
+				<li>Управление установкой или удалением полей из БД.</li>
+			</ul>
+		</div>
+	</article>
+	<article class="article__grey" id="settings">
 		<div class="container content">
 			<h2><i class="ics-sliders-h icon-h"></i>Добавление единицы измерения</h2>
 			<p>Чтобы добавить единицу измерения, перейдите в раздел <span class="badge text-bg-primary">Меню -> Система -> Локализация -> Единица измерения товара</span> и нажмите кнопку "Добавить". Откроется окно, в котором заполните поля;</p>
@@ -300,26 +318,8 @@
 				<li><span class="badge text-bg-dark">Единица измерения</span> - обозначение единицы измерения (например, шт., м.кв.);</li>
 				<li><span class="badge text-bg-dark">По умолчанию</span> - определяет, будет ли эта единица измерения использоваться автоматически при создании товара.</li>
 				<li><span class="badge text-bg-dark">Порядок сортировки</span> - определите порядок сортировки для отображения единиц измерения в списке;</li>
-				<li><span class="badge text-bg-dark">Статус</span> - определяет, будет ли отображаться данная единица измерения.</li>
-			</ul>
-		</div>
-	</article>
-	<article class="article__grey" id="setting_extension">
-		<div class="container content">
-			<h2><i class="ics-sliders-v icon-h"></i>Настройка модификатора</h2>
-			<p>Для настройки модификатора перейдите <span class="badge text-bg-primary">Меню -> Расширения -> Модули -> Единицы измерения товара</span></p>
-			<p class="chapter">Основные параметры настройки:</p>
-			<ul>
-				<li><span class="badge text-bg-dark">Статус</span> - отвечает за включение модификатора;</li>
-				<li><span class="badge text-bg-dark">Разделитель</span> - позволяет вывести символ, который будет между ценой и единицей измерения [Пример: 10.00 / шт. | 10.00 за м.кв.];</li>
-				<li><span class="badge text-bg-dark">Отображение в опциях</span> - позволяет отображение рядом с ценой в разделе с опциями;</li>
-				<li><span class="badge text-bg-dark">Автозамена од. измерения</span> - позволяет автозамену единицы измерения рядом с ценой при выборе опции;</li>
-				<li><span class="badge text-bg-dark">Отображение в списке товаров (Admin)</span> - отображает колонку с единицей измерения в админ-панели на странице списка товаров + сортировка единицы измерения.</li>
-			</ul>
-			<p class="chapter">Статус БД:</p>
-			<ul>
-				<li>Отображение статуса полей в таблице БД;</li>
-				<li>Управление установкой или удалением полей из БД.</li>
+				<li><span class="badge text-bg-dark">Статус</span> - определяет, будет ли отображаться данная единица измерения;</li>
+				<li><span class="badge text-bg-dark">Категории</span> - устанавливает единицу измерения для всех товаров в выбранных категориях.</li>
 			</ul>
 		</div>
 	</article>
@@ -354,7 +354,7 @@
 					<div class="block">
 						<div class="tags">
 							<h5 class="title release">
-								<span class="version">v1.0</span><span class="date">20.01.2024</span>
+								<span class="version">v1.0</span><span class="date">18.02.2024</span>
 							</h5>
 							<p class="tag"><span>Последний релиз</span></p>
 						</div>
@@ -363,7 +363,7 @@
 							<ul>
 								<li>Возможность указать единицу измерения в карточке товара;</li>
 								<li>Возможность указать единицу измерения для каждой опции товара;</li>
-								<li>Изменение единицы измерения при выборе опции;</li>
+								<li>Возможность установить единицу измерения для всех товаров в выбранных категориях;</li>
 								<li>Единицы измерения отображаются на странице товара, в категориях, на странице поиска, на странице производителей и в стандартных модулях.</li>
 							</ul>
 						</div>

@@ -32,8 +32,8 @@
 			"@context": "https://schema.org",
 			"@type": "Article",
 			"headline": "Документація «Одиниці виміру товару»",
-			"datePublished": "2024-01-20",
-			"dateModified": "2024-01-20",
+			"datePublished": "2024-02-18",
+			"dateModified": "2024-02-18",
 			"url": "https://corgras-oc.github.io/docs/unit",
 			"inLanguage": "uk",
 			"author": {
@@ -159,7 +159,7 @@
 					<i class="ics-code-branch"></i>Версія: 1.0
 				</div>
 				<div class="col-12 col-md-3" id="release">
-					<i class="ics-history"></i>Реліз: 20.01.2024
+					<i class="ics-history"></i>Реліз: 18.02.2024
 				</div>
 				<div class="col-12 col-md-6" id="buy">
 					<div class="btn-dropdown dropdown-center">
@@ -203,15 +203,15 @@
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
-					<a href="#settings">
-						<i class="ics-sliders-h"></i>
-						<span>3. Додавання одиниці виміру</span>
+					<a href="#setting_extension">
+						<i class="ics-sliders-v"></i>
+						<span>3. Налаштування модифікатора</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
-					<a href="#setting_extension">
-						<i class="ics-sliders-v"></i>
-						<span>4. Налаштування модифікатора</span>
+					<a href="#settings">
+						<i class="ics-sliders-h"></i>
+						<span>4. Додавання одиниці виміру</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
@@ -290,7 +290,25 @@
 			</ul>
 		</div>
 	</article>
-	<article id="settings">
+	<article id="setting_extension">
+		<div class="container content">
+			<h2><i class="ics-sliders-v icon-h"></i>Налаштування модифікатора</h2>
+			<p>Для налаштування модифікатора перейдіть <span class="badge text-bg-primary">Меню -> Розширення -> Модулі -> Одиниці виміру товару</span></p>
+			<p class="chapter">Основні параметри налаштування:</p>
+			<ul>
+				<li><span class="badge text-bg-dark">Статус</span> - відповідає за увімкнення модифікатора;</li>
+				<li><span class="badge text-bg-dark">Роздільник</span> - дозволяє вивести символ, який буде між ціною та одиницею виміру [Приклад: 10.00 / шт. | 10.00 за м.кв.];</li>
+				<li><span class="badge text-bg-dark">Відображення в опціях</span> - дозволяє відображення поруч з ціною в розділі з опціями;</li>
+				<li><span class="badge text-bg-dark">Відображення в списку товарів (Admin)</span> - відображає колонку з одиницею виміру в адмін-панелі на сторінці списку товарів + сортування одиниці виміру.</li>
+			</ul>
+			<p class="chapter">Статус БД:</p>
+			<ul>
+				<li>Відображення статусу полів у таблиці БД;</li>
+				<li>Керування установкою або видаленням полів з БД.</li>
+			</ul>
+		</div>
+	</article>
+	<article class="article__grey" id="settings">
 		<div class="container content">
 			<h2><i class="ics-sliders-h icon-h"></i>Додавання одиниці виміру</h2>
 			<p>Щоб додати одиницю виміру, перейдіть в розділ <span class="badge text-bg-primary">Меню -> Система -> Локалізація -> Одиниця виміру товару</span>, та натисніть кнопку «Додати». Відкриється вікно, в якому заповніть поля;</p>
@@ -300,26 +318,8 @@
 				<li><span class="badge text-bg-dark">Одиниця виміру</span> - позначення одиниці виміру (наприклад, шт., м.кв.);</li>
 				<li><span class="badge text-bg-dark">За замовчуванням</span> - визначає, чи буде ця одиниця виміру використовуватися автоматично при створенні товару.</li>
 				<li><span class="badge text-bg-dark">Порядок сортування</span> - визначте порядок сортування для відображення одиниць вимірювання у списку;</li>
-				<li><span class="badge text-bg-dark">Статус</span> - визначає, чи відображати дану одиницю виміру.</li>
-			</ul>
-		</div>
-	</article>
-	<article class="article__grey" id="setting_extension">
-		<div class="container content">
-			<h2><i class="ics-sliders-v icon-h"></i>Налаштування модифікатора</h2>
-			<p>Для налаштування модифікатора перейдіть <span class="badge text-bg-primary">Меню -> Розширення -> Модулі -> Одиниці виміру товару</span></p>
-			<p class="chapter">Основні параметри налаштування:</p>
-			<ul>
-				<li><span class="badge text-bg-dark">Статус</span> - відповідає за увімкнення модифікатора;</li>
-				<li><span class="badge text-bg-dark">Роздільник</span> - дозволяє вивести символ, який буде між ціною та одиницею виміру [Приклад: 10.00 / шт. | 10.00 за м.кв.];</li>
-				<li><span class="badge text-bg-dark">Відображення в опціях</span> - дозволяє відображення поруч з ціною в розділі з опціями;</li>
-				<li><span class="badge text-bg-dark">Автозаміна од. вимірювання</span> - дозволяє автозаміну одиниці вимірювання поруч з ціною при виборі опції;</li>
-				<li><span class="badge text-bg-dark">Відображення в списку товарів (Admin)</span> - відображає колонку з одиницею виміру в адмін-панелі на сторінці списку товарів + сортування одиниці виміру.</li>
-			</ul>
-			<p class="chapter">Статус БД:</p>
-			<ul>
-				<li>Відображення статусу полів у таблиці БД;</li>
-				<li>Керування установкою або видаленням полів з БД.</li>
+				<li><span class="badge text-bg-dark">Статус</span> - визначає, чи відображати дану одиницю виміру;</li>
+				<li><span class="badge text-bg-dark">Категорії</span> - встановлює одиницю виміру для всіх товарів у вибраних категоріях.</li>
 			</ul>
 		</div>
 	</article>
@@ -354,7 +354,7 @@
 					<div class="block">
 						<div class="tags">
 							<h5 class="title release">
-								<span class="version">v1.0</span><span class="date">20.01.2024</span>
+								<span class="version">v1.0</span><span class="date">18.02.2024</span>
 							</h5>
 							<p class="tag"><span>Останній реліз</span></p>
 						</div>
@@ -363,7 +363,7 @@
 							<ul>
 								<li>Можливість вказати у картці товару одиницю виміру;</li>
 								<li>Можливість вказати одиницю виміру для кожної опції товару;</li>
-								<li>Зміна одиниці вимірювання при виборі опції;</li>
+								<li>Можливість встановлення одиниці вимірювання для всіх товарів у вибраних категоріях;</li>
 								<li>Одиниці виміру виводяться на сторінці товару, в категоріях, на сторінці пошуку, на сторінці виробників та в стандартних модулях.</li>
 							</ul>
 						</div>

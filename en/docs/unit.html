@@ -32,8 +32,8 @@
 			"@context": "https://schema.org",
 			"@type": "Article",
 			"headline": "Documentation «Units Measurement Product»",
-			"datePublished": "2024-01-20",
-			"dateModified": "2024-01-20",
+			"datePublished": "2024-02-18",
+			"dateModified": "2024-02-18",
 			"url": "https://corgras-oc.github.io/en/docs/unit",
 			"inLanguage": "en",
 			"author": {
@@ -159,7 +159,7 @@
 					<i class="ics-code-branch"></i>Version: 1.0
 				</div>
 				<div class="col-12 col-md-3" id="release">
-					<i class="ics-history"></i>Release: 20.01.2024
+					<i class="ics-history"></i>Release: 18.02.2024
 				</div>
 				<div class="col-12 col-md-6" id="buy">
 					<div class="btn-dropdown dropdown-center">
@@ -203,15 +203,15 @@
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
-					<a href="#settings">
-						<i class="ics-sliders-h"></i>
-						<span>3. Add unit of measurement</span>
+					<a href="#setting_extension">
+						<i class="ics-sliders-v"></i>
+						<span>3. Modification configuration</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
-					<a href="#setting_extension">
-						<i class="ics-sliders-v"></i>
-						<span>4. Modification configuration</span>
+					<a href="#settings">
+						<i class="ics-sliders-h"></i>
+						<span>4. Add unit of measurement</span>
 					</a>
 				</div>
 				<div class="col-6 col-md-4">
@@ -290,7 +290,25 @@
 			</ul>
 		</div>
 	</article>
-	<article id="settings">
+	<article id="setting_extension">
+		<div class="container content">
+			<h2><i class="ics-sliders-v icon-h"></i>Modification configuration</h2>
+			<p>To configure the modification, go to <span class="badge text-bg-primary">Menu -> Extensions -> Modules -> Units Measurement Product</span></p>
+			<p class="chapter">Main configuration parameters:</p>
+			<ul>
+				<li><span class="badge text-bg-dark">Status</span> - controls the activation of the modification;</li>
+				<li><span class="badge text-bg-dark">Separator</span> - allows you to specify the symbol between the price and the unit of measurement [Example: 10.00 / piece | 10.00 per sq. m.];</li>
+				<li><span class="badge text-bg-dark">Display in options</span> - enables display next to the price in the options section;</li>
+				<li><span class="badge text-bg-dark">Display in product list (Admin)</span> - displays a column with the unit of measurement in the admin panel on the product list page + sorting by unit of measurement.</li>
+			</ul>
+			<p class="chapter">Database Status:</p>
+			<ul>
+				<li>Displays the status of fields in the database table;</li>
+				<li>Manages the installation or removal of fields from the database.</li>
+			</ul>
+		</div>
+	</article>
+	<article class="article__grey" id="settings">
 		<div class="container content">
 			<h2><i class="ics-sliders-h icon-h"></i>Add Unit Of Measurement</h2>
 			<p>To add a unit of measurement, go to the section <span class="badge text-bg-primary">Menu -> System -> Localization -> Units Measurement Product</span>, and click the "Add" button. A window will open, where you should fill in the fields;</p>
@@ -300,26 +318,8 @@
 				<li><span class="badge text-bg-dark">Unit</span> - the designation of the unit of measure (e.g., pcs., sq. m.);</li>
 				<li><span class="badge text-bg-dark">Default</span> - determines whether this unit of measure will be automatically used when creating a product;</li>
 				<li><span class="badge text-bg-dark">Sort Order</span> - set the sorting order for displaying units of measurement in the list;</li>
-				<li><span class="badge text-bg-dark">Status</span> - determines whether to display this unit of measure.</li>
-			</ul>
-		</div>
-	</article>
-	<article class="article__grey" id="setting_extension">
-		<div class="container content">
-			<h2><i class="ics-sliders-v icon-h"></i>Modification configuration</h2>
-			<p>To configure the modification, go to <span class="badge text-bg-primary">Menu -> Extensions -> Modules -> Units Measurement Product</span></p>
-			<p class="chapter">Main configuration parameters:</p>
-			<ul>
-				<li><span class="badge text-bg-dark">Status</span> - controls the activation of the modification;</li>
-				<li><span class="badge text-bg-dark">Separator</span> - allows you to specify the symbol between the price and the unit of measurement [Example: 10.00 / piece | 10.00 per sq. m.];</li>
-				<li><span class="badge text-bg-dark">Display in options</span> - enables display next to the price in the options section;</li>
-				<li><span class="badge text-bg-dark">Auto-replace unit of measurement</span> - enables auto-replacement of the unit of measurement next to the price when selecting an option;</li>
-				<li><span class="badge text-bg-dark">Display in product list (Admin)</span> - displays a column with the unit of measurement in the admin panel on the product list page + sorting by unit of measurement.</li>
-			</ul>
-			<p class="chapter">Database Status:</p>
-			<ul>
-				<li>Displays the status of fields in the database table;</li>
-				<li>Manages the installation or removal of fields from the database.</li>
+				<li><span class="badge text-bg-dark">Status</span> - determines whether to display this unit of measure;</li>
+				<li><span class="badge text-bg-dark">Category</span> - sets the unit of measurement for all products in the selected categories.</li>
 			</ul>
 		</div>
 	</article>
@@ -354,7 +354,7 @@
 					<div class="block">
 						<div class="tags">
 							<h5 class="title release">
-								<span class="version">v1.0</span><span class="date">20.01.2024</span>
+								<span class="version">v1.0</span><span class="date">18.02.2024</span>
 							</h5>
 							<p class="tag"><span>Latest release</span></p>
 						</div>
@@ -363,7 +363,7 @@
 							<ul>
 								<li>The ability to specify a unit of measurement on the product card;</li>
 								<li>The ability to specify a unit of measurement for each product option;</li>
-								<li>Changing the unit of measurement when selecting an option;</li>
+								<li>Ability to set a unit of measurement for all products in selected categories;</li>
 								<li>Units of measurement are displayed on the product page, in categories, on the search page, on the manufacturers' page, and in standard modules.</li>
 							</ul>
 						</div>
